@@ -57,7 +57,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  className="block  mt-5 lg-mt:2  px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block  mt-3 lg-mt:2  px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Home
                 </a>
@@ -65,7 +65,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  className="block   mt-5 lg-mt:2  px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block   mt-3 lg-mt:2  px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   About Us
                 </a>
@@ -73,13 +73,13 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  className="block  mt-5 lg-mt:2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block  mt-3 lg-mt:2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Experiences
                 </a>
               </li>
               <li>
-                <button className="bg-orange-500 hidden xl:block text-white px-4 py-2  mt-3 lg:mt-2  rounded-full	">
+                <button className="bg-orange-500 hidden xl:block text-white px-4 py-2  mt-3 lg:mt-1  rounded-full	">
                   Sign Up
                 </button>
               </li>

@@ -17,7 +17,7 @@ export default function IntroSection() {
           alt="Home Background"
           layout="fill"
           objectFit="cover"
-          className="absolute xl:mt-[13vh] mt-[8vh]"
+          className="absolute xl:mt-[13vh] mt-[9vh]"
         />
         <div className="z-10 text-white flex flex-col xl:flex-row w-screen  ">
           <div className="xl:w-3/5 lg:pr-8 m-10  xl:pt-12 ">

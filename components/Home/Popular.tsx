@@ -18,7 +18,10 @@ import hills from "../../public/images/mountainbg.svg";
 import phone2 from "../../public/images/phone2.png";
 import Play from "../../public/images/googleplay.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
+import s1 from "../../public/images/Set-0.png";
 
+import s2 from "../../public/images/Set-1.png";
+import s3 from "../../public/images/Set-2.png";
 const josefinSans = Josefin_Sans({
   subsets: ["latin"], // Adjust as needed
 });
@@ -69,7 +72,7 @@ export default function Popular() {
                     style={{ border: "none" }}
                   >
                     <CardContent
-                      className="flex justify-center h-[50vh] lg:h-[80vh] md:h-[80vh]   pt-[10vh] pb-[10vh] "
+                      className="flex justify-center h-[50vh] lg:h-[60vh] md:h-[60vh]   pt-[10vh] pb-[10vh] "
                       style={{
                         backgroundImage: `url(${item.src})`,
                         backgroundSize: "contain", // Use 'cover' to ensure the image covers the entire container
@@ -103,9 +106,20 @@ export default function Popular() {
             </div>
           </div>
 
-          <div className="min-h-screen flex items-center justify-center">
-            <div className="w-4/5">
-              <Image src={explore} alt="Explore" className="w-full h-auto" />
+          <div className=" flex w-screen justify-center p-10">
+            <div className="hidden xl:block w-4/5">
+              <Image src={explore} alt="Explore" className=" w-full h-auto" />
+            </div>
+            <div className="flex flex-wrap xl:hidden">
+              <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 p-5">
+                <Image src={s1} alt="Set 0" className="w-50" />
+              </div>
+              <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0  p-5">
+                <Image src={s2} alt="Set 1" className="w-50" />
+              </div>
+              <div className="w-full flex justify-center lg:w-1/3  p-5">
+                <Image src={s3} alt="Set 2" className="w-50" />
+              </div>
             </div>
           </div>
         </div>
