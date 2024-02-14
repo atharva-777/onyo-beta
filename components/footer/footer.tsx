@@ -59,7 +59,7 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <p className=" text-white mt-2">Don't just dream it, Yoliday-it!</p>
+            <p className=" text-white mt-2">Don&apos;t just dream it, Yoliday-it!</p>
           </div>
           <div className="container mx-auto flex flex-row my-5 justify-between lg:px-[10vh] md:px-4 ">
             {/* Company Section */}

@@ -62,7 +62,7 @@ export default function Popular() {
               {data.map((item, index) => (
                 <CarouselItem
                   key={index}
-                  className="!basics-1/3 !sm:basis-1/3 md:basis-1/3 lg:basis-1/5 "
+                  className="basics-1/3 !sm:basis-1/3 md:basis-1/3 lg:basis-1/5 "
                 >
                   <Card
                     className="card transition duration-300 transform hover:drop-shadow-2xl"
@@ -81,8 +81,6 @@ export default function Popular() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
 
           <button className="m-5 bg-orange-500 text-white py-2 px-4 rounded-md">
@@ -129,10 +127,10 @@ export default function Popular() {
             <h3 className="text-lg lg:text-2xl font-light text-black mb-2">
               Yoliday curates adventures crafted by fellow explorers, not travel
               bots. These ‘people’ know every hidden gem, every winding street,
-              and every must-try dish – and they're ready to share their insider
-              knowledge with you. With Yoliday Experiences, you're not just
-              ticking destinations off a list – you're diving into authentic
-              experiences, building friendships..{" "}
+              and every must-try dish – and they&apos;re ready to share their
+              insider knowledge with you. With Yoliday Experiences, you&apos;re
+              not just ticking destinations off a list – you&apos;re diving into
+              authentic experiences, building friendships..{" "}
             </h3>
           </div>
         </div>

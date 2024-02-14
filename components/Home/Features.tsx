@@ -92,7 +92,7 @@ export default function Features() {
           opts={{
             align: "start",
           }}
-          className="w-1/2 md:w-1/2 sm:w-1/2 lg:w-3/5 "
+          className="w-4/5 md:w-1/2 sm:w-1/2 lg:w-3/5 "
         >
           <CarouselContent>
             {data.map((item, index) => (
@@ -119,9 +119,7 @@ export default function Features() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>{" "}
+        </Carousel>
       </div>
     </>
   );
