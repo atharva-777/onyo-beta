@@ -10,7 +10,19 @@ import {
 } from "../components/ui/carousel";
 import c1 from "../../public/images/Booking.svg";
 import c2 from "../../public/images/Sharing.svg";
+import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 
+const poppins = Poppins({
+  weight: ["300", "400", "600", "800"], // Example with multiple weights
+  style: "normal",
+  subsets: ["latin"],
+});
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"], // Adjust as needed
+});
+const inter = Inter({
+  subsets: ["latin"],
+});
 export default function Features() {
   const data = [
     {
@@ -52,19 +64,23 @@ export default function Features() {
   ];
   return (
     <>
-      <div className="text-center flex flex-col items-center justify-center  p-20 mx-auto">
-        <h2 className="text-xl lg:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
-          KEY FEATURES
-        </h2>
+      <div className="text-center flex flex-col items-center justify-center  p-5 md:p-20 mx-auto">
+        <div className={poppins.className}>
+          <h2 className="text-xl lg:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
+            KEY FEATURES
+          </h2>
+        </div>
+        <div className={josefinSans.className}>
+          <h1 className="text-3xl lg:text-4xl font-bold tracking-wider text-black mb-4">
+            DISCOVER, SHARE, AND JOURNEY TOGETHER IN THE ULTIMATE TRAVEL
+            COMMUNITY
+          </h1>
 
-        <h1 className="text-4xl lg:text-5xl font-bold tracking-widest text-black mb-4">
-          DISCOVER, SHARE, AND JOURNEY TOGETHER IN THE ULTIMATE TRAVEL COMMUNITY
-        </h1>
-
-        <h3 className="text-lg lg:text-2xl w-3/5 font-light text-black mb-2">
-          Ladies and Gentlemen! Fasten your seatbelt because as we embark on a
-          new trip with Yoliday.
-        </h3>
+          <h3 className="text-xl lg:text-2xl w-3/5 mx-auto font-medium  text-slate-500 mb-2">
+            Ladies and Gentlemen! Fasten your seatbelt because as we embark on a
+            new trip with Yoliday.
+          </h3>
+        </div>
       </div>
       <div className="flex flex-col lg:flex-row md:flex-row w-screen lg:p-12 items-center">
         <Image
@@ -91,9 +107,12 @@ export default function Features() {
                       alt={`Item ${index + 1}`}
                       className="mb-4 w-32 h-32 object-cover"
                     />
-                    <h3 className="text-xl font-extrabold m-3 font-poppins">
-                      {item.heading}
-                    </h3>
+                    <div className={inter.className}>
+                      <h3 className="text-3xl font-extrabold m-3 font-poppins">
+                        {item.heading}
+                      </h3>
+                    </div>
+
                     <p className="text-gray-600">{item.paragraph}</p>
                   </CardContent>
                 </Card>

@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#373737] text-white p-[2vh] ">
-        <div className="container mx-auto flex justify-between">
-          <div>
-            <Image src={logo} alt="logo" />
-            <div className="flex space-x-4 mt-10">
+      <footer className="bg-[#373737] text-white md:p-[2vh] ">
+        <div className="container mx-auto flex justify-between flex-col sm:flex-row">
+          <div className="text-center flex  flex-col justify-center">
+            <Image src={logo} alt="logo" className="mx-auto" />
+            <div className="flex space-x-4 my-3 mx-auto">
               <a href="https://twitter.com/43Meher/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,25 +61,32 @@ export default function Footer() {
             </div>
             <p className=" text-white mt-2">Don't just dream it, Yoliday-it!</p>
           </div>
-          <div className="container mx-auto flex justify-between lg:px-[10vh] md:px-4 sm:px-2">
-            <div className="footer-section">
+          <div className="container mx-auto flex flex-row my-5 justify-between lg:px-[10vh] md:px-4 ">
+            {/* Company Section */}
+            <div className="footer-section lg:mb-0 mb-4">
               <h4 className="text-l  mb-5">Company</h4>
-              <h4 className="text-l  mb-3">Events</h4>
-              <h4 className="text-l  mb-3">Blog</h4>
-              <h4 className="text-l  mb-3">FAQ</h4>
-              <h4 className="text-l  mb-3">Join Us</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">Events</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">Blog</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">FAQ</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">Join Us</h4>
             </div>
-            <div className="footer-section">
+
+            {/* About Section */}
+            <div className="footer-section lg:mb-0 mb-4">
               <h4 className="text-l  mb-5">About</h4>
-              <h4 className="text-l  mb-3">Project</h4>
-              <h4 className="text-l  mb-3">Services</h4>
-              <h4 className="text-l  mb-3">Our Story</h4>
-            </div>{" "}
+              <h4 className="text-l  mb-3 hidden sm:block">Project</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">Services</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">Our Story</h4>
+            </div>
+
+            {/* Contact Section */}
             <div className="footer-section">
               <h4 className="text-l  mb-5">Contact Us</h4>
-              <h4 className="text-l  mb-3">contact@yoliday.com</h4>
-              <h4 className="text-l  mb-3">91 88******77</h4>
-              <h4 className="text-l  mb-3">India</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">
+                contact@yoliday.com
+              </h4>
+              <h4 className="text-l  mb-3 hidden sm:block">91 88******77</h4>
+              <h4 className="text-l  mb-3 hidden sm:block">India</h4>
             </div>
           </div>
         </div>
