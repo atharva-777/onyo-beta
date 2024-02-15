@@ -13,6 +13,10 @@ import Autoplay from "embla-carousel-autoplay";
 
 import c1 from "../../public/images/Booking.svg";
 import c2 from "../../public/images/Sharing.svg";
+import c3 from "../../public/images/Traveller.png";
+import c4 from "../../public/images/Wagon.png";
+import c5 from "../../public/images/Hiking.png";
+import c6 from "../../public/images/Plane.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -41,25 +45,25 @@ export default function Features() {
         "Your next adventure awaits you. Let's get set go & make the best memories!",
     },
     {
-      imageUrl: c2,
+      imageUrl: c3,
       heading: "Connect with Like-Minded Travelers",
       paragraph:
         "Join forces with like-minded adventurers and unlock a world of shared experiences1",
     },
     {
-      imageUrl: c2,
+      imageUrl: c4,
       heading: "Easy Experience Sharing",
       paragraph:
         "It's as easy as a bee, hop in and read some of the finest trip tips and tricks.",
     },
     {
-      imageUrl: c2,
+      imageUrl: c5,
       heading: "Join Yoliday-Curated Experiences",
       paragraph:
         "Ditch the boring itinerary and join in unique travel experiences.",
     },
     {
-      imageUrl: c2,
+      imageUrl: c6,
       heading: "Event Notifications for you",
       paragraph:
         "Miss on nothing with our customized event notifications for you.",
@@ -74,12 +78,12 @@ export default function Features() {
           </h2>
         </div>
         <div className={josefinSans.className}>
-          <h1 className="text-3xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
+          <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
             DISCOVER, SHARE, AND JOURNEY TOGETHER IN THE ULTIMATE TRAVEL
             COMMUNITY
           </h1>
         </div>
-        <h3 className="text-xl lg:text-2xl w-3/5 mx-auto font-normal  text-slate-500 mb-2">
+        <h3 className="text-xl lg:text-2xl xl:w-3/5 mx-auto font-normal  text-slate-500 mb-2">
           Ladies and Gentlemen! Fasten your seatbelt because as we embark on a
           new trip with Yoliday.
         </h3>
@@ -90,11 +94,11 @@ export default function Features() {
           <Image
             src={phone}
             alt="Home Background"
-            className="lg:pl-10 xl:w-[65vh]"
+            className="lg:pl-10 xl:w-[70vh]"
           />
         </div>
         <Carousel
-          className="md-3/5 sm:w-1/2 xl:w-2/3  "
+          className="md-3/5 sm:w-1/2 xl:w-2/3 max-w-full "
           plugins={[
             Autoplay({
               delay: 2000,

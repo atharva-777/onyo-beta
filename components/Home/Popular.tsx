@@ -49,12 +49,12 @@ export default function Popular() {
           </h2>
         </div>
         <div className={josefinSans.className}></div>
-        <h1 className="text-3xl 2xl:text-4xl  lg:text-4xl lg:px-10 font-bold tracking-wide text-black mb-4">
+        <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl lg:px-10 font-bold tracking-wide text-black mb-4">
           EMBARK ON THRILLING HORIZONS WITH ADVENTURES!
         </h1>
       </div>
 
-      <h3 className="text-xl text-center lg:text-2xl w-3/5 mx-auto font-normal  text-slate-500 mb-2">
+      <h3 className="text-xl text-center xl:text-2xl xl:w-3/5 mx-auto font-normal  text-slate-500 mb-2">
         Explore, Connect, and Embark on Adventures Together with Yoliday
       </h3>
       <div>
@@ -74,14 +74,14 @@ export default function Popular() {
               {data.map((item, index) => (
                 <CarouselItem
                   key={index}
-                  className="basics-1/3 !sm:basis-1/3 lg:basis-1/3 xl:basis-1/5 "
+                  className="basics-1/2 sm:basis-1/3  md:basis-1/3  xl:basis-1/5 "
                 >
                   <Card
                     className="card transition duration-300 transform hover:drop-shadow-2xl"
                     style={{ border: "none" }}
                   >
                     <CardContent
-                      className="flex justify-center h-[30vh] xl:h-[60vh] md:h-[30vh]   pt-[10vh] pb-[10vh] "
+                      className="flex justify-center h-[30vh] xl:h-[50vh] md:h-[30vh]   pt-[10vh] pb-[10vh] "
                       style={{
                         backgroundImage: `url(${item.src})`,
                         backgroundSize: "contain", // Use 'cover' to ensure the image covers the entire container
@@ -105,7 +105,7 @@ export default function Popular() {
               </h2>
             </div>
             <div className={josefinSans.className}>
-              <h1 className="text-3xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
+              <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
                 YOLIDAY: WHERE YOUR JOURNEY FINDS ITS TRIBE
               </h1>
             </div>
@@ -143,20 +143,20 @@ export default function Popular() {
               Explore More
             </button>
           </div>
-          <div className=" xl:w-1/2   xl:p-5 p-20  text-center xl:text-left">
+          <div className=" xl:w-1/2   xl:p-20 p-10  text-center xl:text-left">
             <div className={poppins.className}>
-              <h2 className="my-10 text-2xl xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
+              <h2 className="my-10 text-2xl xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-2 font-poppins">
                 JOIN YOLIDAY EXPERIENCES
               </h2>
             </div>
             <div className={josefinSans.className}>
-              <h1 className="!leading-10 xl:my-10 text-3xl xl:text-4xl  font-bold tracking-wider flex flex-col  text-slate-600 xl:mb-4">
+              <h1 className="!leading-10 xl:my-5 text-2xl xl:text-4xl  font-bold tracking-wider flex flex-col  text-slate-600 xl:mb-2">
                 WHERE MEMORIES BLOOM
               </h1>{" "}
-              <h1 className="!leading-10 xl:my-10 text-3xl xl:text-4xl  font-bold tracking-wider flex flex-col  text-slate-600 xl:mb-4">
+              <h1 className="!leading-10 xl:my-5 text-2xl xl:text-4xl  font-bold tracking-wider flex flex-col  text-slate-600 xl:mb-2">
                 LED BY YOUR TRIBE
               </h1>
-              <h3 className="text-xl xl:text-2xl font-light text-black mb-2">
+              <h3 className="text-xl xl:text-2xl font-light text-black mb-2 my-7">
                 Yoliday curates adventures crafted by fellow explorers, not
                 travel bots. These ‘people’ know every hidden gem, every winding
                 street, and every must-try dish – and they&apos;re ready to
@@ -189,11 +189,8 @@ export default function Popular() {
           </div>
           <div className="mb-[70vh] sm:mb-0 lg:w-2/3 md:w-2/3 p-10 lg:pt-[15vh] ">
             <div className={poppins.className}>
-              <h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-semibold tracking-wide text-white mb-5">
-                Embark on Unforgettable Journeys{" "}
-              </h1>
-              <h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-semibold tracking-wide text-white mb-5">
-                with Yoliday Experiences.
+              <h1 className="text-[24px] xl:text-4xl 2xl:text-5xl font-semibold tracking-wide text-white mb-5">
+                Embark on unforgettable Journey with Yoliday Experiences.
               </h1>
             </div>
             <h3 className="text-lg xl:text-xl 2xl:text-2xl font-light text-white mb-2  p-2">

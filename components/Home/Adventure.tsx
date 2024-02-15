@@ -9,7 +9,7 @@ export default function Adventure() {
   return (
     <div className={josefinSans.className}>
       <div className="text-center flex flex-col items-center justify-center md:p-10 mx-auto">
-        <h1 className="text-3xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
+        <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
           YOLIDAY ADVENTURES UNVEILED: A JOURNEY THROUGH SHARED EXPERIENCES
         </h1>
         <Image src={c1} className="lg:pl-10 w-screen" alt="Home Background" />
