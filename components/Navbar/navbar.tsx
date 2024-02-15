@@ -12,11 +12,11 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-zinc-50">
-        <div className="max-w-screen-xl flex flex-wrap items-center flex-row justify-between p-4">
+        <div className="w-screen flex flex-wrap items-center flex-row  p-4">
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 xl:rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded={isNavbarVisible ? "true" : "false"}
             onClick={toggleNavbar}
@@ -39,25 +39,25 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <a className="xl:w-[15vh] w-[10vh]  ml-[5vh]">
+          <a className="xl:w-[15vh] w-[10vh] md:w-1/6 mx-2 xl:mx-5">
             <Image src={logo} alt="Flowbite Logo" />
           </a>
-          <div>
-            <button className="lg:hidden bg-orange-500 text-white px-4 py-2 rounded-full">
+          <div className="right-0 xl:hidden ml-auto flex items-end ">
+            <button className="ml-auto xl:hidden bg-orange-500 text-white px-6 py-3 xl:rounded-full">
               Sign Up
             </button>
           </div>
           <div
-            className={`w-full lg:block lg:w-auto xl:ml-[25vh] ${
+            className={` xl:block w-5/6 flex xl:justify-end  ${
               isNavbarVisible ? "block" : "hidden"
             }`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex-col p-4 md:p-0 mt-4 flex xl:justify-end border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
               <li>
                 <a
                   href="#"
-                  className="block  mt-3 lg-mt:2  px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block  mt-3  lg-mt:2 w-[20vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Home
                 </a>
@@ -65,7 +65,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  className="block   mt-3 lg-mt:2  px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block   mt-3 lg-mt:2 w-[20vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   About Us
                 </a>
@@ -73,13 +73,13 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  className="block  mt-3 lg-mt:2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block  mt-3 lg-mt:2 w-[20vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Experiences
                 </a>
               </li>
               <li>
-                <button className="bg-orange-500 hidden xl:block text-white px-4 py-2  mt-3 lg:mt-1  rounded-full	">
+                <button className="bg-orange-500 w-[20vh] hidden xl:block text-white px-4 py-2  mt-3 lg:mt-1  rounded-full	">
                   Sign Up
                 </button>
               </li>

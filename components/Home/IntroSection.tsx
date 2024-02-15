@@ -20,17 +20,17 @@ export default function IntroSection() {
           className="absolute xl:mt-[13vh] mt-[9vh]"
         />
         <div className="z-10 text-white flex flex-col xl:flex-row w-screen  ">
-          <div className="xl:w-3/5 lg:pr-8 m-10  xl:pt-12 ">
-            <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl font-bold text-black">
+          <div className="xl:w-2/3 lg:pr-8 ml-14 mt-12 xl:pt-12 ">
+            <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-[62px] 2xl:text-[72px] 3xl:text-[90px] font-bold text-black">
               Find your Tribe, <span style={{ color: "#FFA500" }}>Explore</span>
             </h1>
-            <p className="text-1xl sm:text-2xl text-slate-600  pt-5 xl:w-4/5	">
+            <p className="text-2xl lg:text-3xl text-slate-600  pt-5 xl:w-4/5 2xl:text-[30px] 3xl:text-[35px]	">
               Connect to like-minded travelers for shared adventures. Create a
               unique experience or join an experiences created by others.
             </p>
           </div>
-          <div className="xl:w-2/5 lg:w-[100%] ">
-            <Image src={exp} alt="Explore Image" />
+          <div className="xl:w-2/5 xl:w-[100vh] mr-10 2xl:mr-7">
+            <Image src={exp} alt="Explore Image" className="w-full " />
           </div>
         </div>
       </div>

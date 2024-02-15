@@ -1,3 +1,4 @@
+"use client";
 import phone from "../../public/images/phone.svg";
 import Image from "next/image";
 import { Card, CardContent } from "../components/ui/card";
@@ -8,6 +9,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 import c1 from "../../public/images/Booking.svg";
 import c2 from "../../public/images/Sharing.svg";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
@@ -64,56 +67,62 @@ export default function Features() {
   ];
   return (
     <>
-      <div className="text-center flex flex-col items-center justify-center  p-5 md:p-20 mx-auto">
+      <div className="text-center flex flex-col items-center justify-center w-4/5  p-5 lg:p-20 mx-auto">
         <div className={poppins.className}>
-          <h2 className="text-xl lg:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
+          <h2 className="text-xl lg:text-3xl 2xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
             KEY FEATURES
           </h2>
         </div>
         <div className={josefinSans.className}>
-          <h1 className="text-3xl lg:text-4xl font-bold tracking-wider text-black mb-4">
+          <h1 className="text-3xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
             DISCOVER, SHARE, AND JOURNEY TOGETHER IN THE ULTIMATE TRAVEL
             COMMUNITY
           </h1>
-
-          <h3 className="text-xl lg:text-2xl w-3/5 mx-auto font-medium  text-slate-500 mb-2">
-            Ladies and Gentlemen! Fasten your seatbelt because as we embark on a
-            new trip with Yoliday.
-          </h3>
         </div>
+        <h3 className="text-xl lg:text-2xl w-3/5 mx-auto font-normal  text-slate-500 mb-2">
+          Ladies and Gentlemen! Fasten your seatbelt because as we embark on a
+          new trip with Yoliday.
+        </h3>
       </div>
-      <div className="flex flex-col lg:flex-row md:flex-row w-screen lg:p-12 items-center">
-        <Image
-          src={phone}
-          className="lg:pl-10 lg:w-[75vh] md:w-1/2"
-          alt="Home Background"
-        />
+
+      <div className="flex flex-col lg:flex-row md:flex-row w-screen items-center">
+        <div className="lg:pl-12 xl:w-1/3 md:w-2/5">
+          <Image
+            src={phone}
+            alt="Home Background"
+            className="lg:pl-10 xl:w-[65vh]"
+          />
+        </div>
         <Carousel
-          opts={{
-            align: "start",
-          }}
-          className="w-4/5 md:w-1/2 sm:w-1/2 lg:w-3/5 "
+          className="md-3/5 sm:w-1/2 xl:w-2/3  "
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
         >
-          <CarouselContent>
+          <CarouselContent className="xl:p-20">
             {data.map((item, index) => (
-              <CarouselItem key={index} className=" md:basis-2/3 lg:basis-2/5">
+              <CarouselItem
+                key={index}
+                className=" md:basis-2/3 xl:basis-2/5 align-middle my-auto py-3 card rounded-3xl transition duration-300 transform hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)]"
+              >
                 <Card
-                  className="card transition duration-300 transform hover:drop-shadow-2xl "
+                  className="xl:h-[75vh] rounded-3xl align-middle my-auto"
                   style={{ border: "none" }}
                 >
-                  <CardContent className="  lg:h-[80vh] pt-[10vh] pb-[10vh] grid justify-items-center text-center	">
+                  <CardContent className="rounded-3xl grid justify-items-center align-middle my-auto text-center px-9">
                     <Image
                       src={item.imageUrl}
                       alt={`Item ${index + 1}`}
-                      className="mb-4 w-32 h-32 object-cover"
+                      className="2xl:w-32 xl:w-21 2xl:my-12 xl:my-6 object-cover"
                     />
                     <div className={inter.className}>
-                      <h3 className="text-3xl font-extrabold m-3 font-poppins">
+                      <h3 className="	  my-4 xl:my-2 text-xl xl:text-2xl 2xl:text-4xl font-extrabold m-3 font-poppins">
                         {item.heading}
                       </h3>
                     </div>
-
-                    <p className="text-gray-600">{item.paragraph}</p>
+                    <p className="text-gray-600 my-5">{item.paragraph}</p>
                   </CardContent>
                 </Card>
               </CarouselItem>

@@ -8,10 +8,10 @@ const josefinSans = Josefin_Sans({
 export default function Adventure() {
   return (
     <div className={josefinSans.className}>
-      <div className="text-center flex flex-col items-center justify-center md:p-20 mx-auto">
-        <h3 className=" p-5 text-2xl lg:text-4xl md:text-3xl font-bold tracking-wider text-black mb-4">
+      <div className="text-center flex flex-col items-center justify-center md:p-10 mx-auto">
+        <h1 className="text-3xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
           YOLIDAY ADVENTURES UNVEILED: A JOURNEY THROUGH SHARED EXPERIENCES
-        </h3>
+        </h1>
         <Image src={c1} className="lg:pl-10 w-screen" alt="Home Background" />
       </div>
     </div>
