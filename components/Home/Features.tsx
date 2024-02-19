@@ -71,26 +71,26 @@ export default function Features() {
   ];
   return (
     <>
-      <div className="text-center flex flex-col items-center justify-center w-4/5  p-5 lg:p-20 mx-auto">
+      <div className="text-center flex flex-col items-center justify-center w-4/5  xl:p-5 sm:p-2 lg:pt-20 lg:px-20 mx-auto">
         <div className={poppins.className}>
-          <h2 className="text-xl lg:text-3xl 2xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
+          <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-[600] xl:tracking-[4px] tracking-[3px] text-[#FF4902] xl:mb-4 mb-2 font-poppins">
             KEY FEATURES
           </h2>
         </div>
         <div className={josefinSans.className}>
-          <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
-            DISCOVER, SHARE, AND JOURNEY TOGETHER IN THE ULTIMATE TRAVEL
+          <h1 className="text-xl xl:text-3xl 2xl:text-4xl px-2  font-bold tracking-wide text-[#191825] mb-2 xl:mb-4">
+            DISCOVER, SHARE, AND JOURNEY TOGETHER WITH THE ULTIMATE TRAVEL
             COMMUNITY
           </h1>
         </div>
-        <h3 className="text-xl lg:text-2xl xl:w-3/5 mx-auto font-normal  text-slate-500 mb-2">
-          Ladies and Gentlemen! Fasten your seatbelt because as we embark on a
-          new trip with Yoliday.
+        <h3 className="text-lg xl:text-xl xl:w-3/5 mx-auto font-normal  text-slate-500 mb-2">
+          Ladies and Gentlemen! Fasten your seatbelt as we embark on a new trip
+          with Yoliday.
         </h3>
       </div>
 
       <div className="flex flex-col lg:flex-row md:flex-row w-screen items-center">
-        <div className="lg:pl-12 xl:w-1/3 md:w-2/5">
+        <div className="lg:pl-12 xl:w-1/3 sm:w-2/5 md:w-2/5 ">
           <Image
             src={phone}
             alt="Home Background"
@@ -98,31 +98,36 @@ export default function Features() {
           />
         </div>
         <Carousel
-          className="md-3/5 sm:w-1/2 xl:w-2/3 max-w-full "
+          className="lg-3/5 xl:w-2/3  sm:w-3/5 max-w-full  "
           plugins={[
             Autoplay({
               delay: 2000,
+              stopOnInteraction: false,
             }),
           ]}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
         >
-          <CarouselContent className="xl:p-20">
+          <CarouselContent className=" xl:p-20   py-10  mx-10 sm:py-2 xl:w-auto lg:w-4/5 sm:mx-2   sm:w-auto ">
             {data.map((item, index) => (
               <CarouselItem
                 key={index}
-                className=" md:basis-2/3 xl:basis-2/5 align-middle my-auto py-3 card rounded-3xl transition duration-300 transform hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)]"
+                className=" md:basis-2/3 xl:basis-2/5 basics-1/1 align-middle my-auto py-3 card rounded-3xl p1-10 sm:pl-5"
               >
                 <Card
-                  className="xl:h-[75vh] rounded-3xl align-middle my-auto"
+                  className="xl:h-[85vh] h-[125vw] sm:h-[58vw] lg:h-[45vw] rounded-3xl align-middle my-auto transition duration-300 transform hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)]"
                   style={{ border: "none" }}
                 >
-                  <CardContent className="rounded-3xl grid justify-items-center align-middle my-auto text-center px-9">
+                  <CardContent className="rounded-3xl px-12 sm:px-7  grid justify-items-center align-middle my-auto text-center xl:px-9">
                     <Image
                       src={item.imageUrl}
                       alt={`Item ${index + 1}`}
-                      className="2xl:w-32 xl:w-21 2xl:my-12 xl:my-6 object-cover"
+                      className="2xl:w-32 xl:w-21 xl:min-h-[25vh] 2xl:min-h-[20vh] 2xl:my-12 xl:my-6 object-cover"
                     />
                     <div className={inter.className}>
-                      <h3 className="	  my-4 xl:my-2 text-xl xl:text-2xl 2xl:text-4xl font-extrabold m-3 font-poppins">
+                      <h3 className="	  my-4 xl:my-2 text-2xl xl:text-2xl 2xl:text-4xl font-extrabold m-3 font-poppins">
                         {item.heading}
                       </h3>
                     </div>

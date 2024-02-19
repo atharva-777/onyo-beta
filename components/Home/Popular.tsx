@@ -18,7 +18,7 @@ import Image from "next/image";
 import groupimg from "../../public/images/group.svg";
 import explore from "../../public/images/exploret.png";
 import hills from "../../public/images/mountainbg.svg";
-import phone2 from "../../public/images/phone2.png";
+import phone2 from "../../public/images/phone2.svg";
 import Play from "../../public/images/googleplay.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 import s1 from "../../public/images/Set-0.png";
@@ -42,46 +42,72 @@ export default function Popular() {
 
   return (
     <>
-      <div className="text-center flex flex-col items-center justify-center  mx-auto">
+      <div className="text-center sm:w-3/5 xl:w-4/5 flex flex-col items-center justify-center  mx-auto">
         <div className={poppins.className}>
-          <h2 className="text-xl lg:text-3xl 2xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
+          <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-[600] xl:tracking-[4px] tracking-[3px] text-[#FF4902] xl:mb-4 mb-2 font-poppins">
             POPULAR EXPERIENCES
           </h2>
         </div>
         <div className={josefinSans.className}></div>
-        <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl lg:px-10 font-bold tracking-wide text-black mb-4">
+        <h1 className="text-xl xl:text-3xl 2xl:text-4xl px-2  font-bold tracking-wide text-[#191825] mb-2 xl:mb-4">
           EMBARK ON THRILLING HORIZONS WITH ADVENTURES!
         </h1>
       </div>
 
-      <h3 className="text-xl text-center xl:text-2xl xl:w-3/5 mx-auto font-normal  text-slate-500 mb-2">
+      <h3 className="text-lg xl:text-xl xl:w-3/5 mx-auto font-normal text-center  text-slate-500 mb-2">
         Explore, Connect, and Embark on Adventures Together with Yoliday
       </h3>
       <div>
         <div className="flex-row justify-center items-center text-center ">
+          {/* <Carousel
+            opts={{
+              align: "start",
+            }}
+            className="sm:p-10 "
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+              }),
+            ]}
+          >
+            <CarouselContent className=" w-3/5 sm:w-full ">
+              {data.map((item, index) => (
+                <CarouselItem
+                  key={index}
+                  className=" w-1/3 sm:basis-1/3  md:basis-1/3 pl-2 xl:basis-1/5 "
+                >
+                  <Card className=" " style={{ border: "none" }}>
+                    <CardContent
+                      className="flex justify-center h-[50vh] xl:h-[60vh] md:h-[30vh] "
+                      style={{
+                        backgroundImage: `url(${item.src})`,
+                        backgroundSize: "contain", // Use 'cover' to ensure the image covers the entire container
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center", // Center the background image both horizontally and vertically
+                      }}
+                    ></CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel> */}
           <Carousel
             opts={{
               align: "start",
             }}
-            className="p-10"
-            plugins={[
-              Autoplay({
-                delay: 2000,
-              }),
-            ]}
+            className="xl:p-10 sm:py-10"
+            plugins={[]}
           >
-            <CarouselContent>
+            <CarouselContent className=" sm:w-[85%] xl:w-full w-[46%] ml-1  ">
               {data.map((item, index) => (
                 <CarouselItem
                   key={index}
-                  className="basics-1/2 sm:basis-1/3  md:basis-1/3  xl:basis-1/5 "
+                  className="sm:basis-1/3  md:basis-1/3 pl-2 xl:basis-1/5 "
                 >
-                  <Card
-                    className="card transition duration-300 transform hover:drop-shadow-2xl"
-                    style={{ border: "none" }}
-                  >
+                  <Card className=" " style={{ border: "none" }}>
                     <CardContent
-                      className="flex justify-center h-[30vh] xl:h-[50vh] md:h-[30vh]   pt-[10vh] pb-[10vh] "
+                      className="flex justify-center  h-[50vh] xl:h-[60vh] md:h-[30vh] "
                       style={{
                         backgroundImage: `url(${item.src})`,
                         backgroundSize: "contain", // Use 'cover' to ensure the image covers the entire container
@@ -95,27 +121,27 @@ export default function Popular() {
             </CarouselContent>
           </Carousel>
 
-          <button className="mx-auto hidden xl:block m-5 bg-orange-500 text-white py-4 px-6 rounded-md">
+          <button className="mx-auto  m-2 bg-[#FF4902] text-white xl:py-4 xl:px-6 py-3 px-4 rounded-md">
             Explore More
           </button>
-          <div className="text-center flex flex-col items-center justify-center md:p-20 mx-auto w-4/5 md:w-3/5">
+          <div className="text-center flex flex-col items-center justify-center pt-10 xl:px-20 xl:pt-20 xl:pb-10  mx-auto w-4/5 md:w-3/5">
             <div className={poppins.className}>
-              <h2 className="text-xl lg:text-3xl 2xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-4 font-poppins">
+              <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-[600] xl:tracking-[4px] tracking-[3px] text-[#FF4902] xl:mb-4 mb-2 font-poppins">
                 HOW IT WORKS
               </h2>
             </div>
             <div className={josefinSans.className}>
-              <h1 className="text-2xl 2xl:text-4xl  lg:text-4xl font-bold tracking-wide text-black mb-4">
+              <h1 className="text-xl xl:text-3xl 2xl:text-4xl px-2  font-bold tracking-wide text-[#191825] mb-2 xl:mb-4">
                 YOLIDAY: WHERE YOUR JOURNEY FINDS ITS TRIBE
               </h1>
             </div>
 
-            <h3 className="text-xl lg:text-2xl  mx-auto font-normal  text-slate-500 mb-2">
+            <h3 className="text-lg xl:text-xl  mx-auto font-normal  text-slate-500 mb-2">
               Explore, Connect, and Embark on Adventures Together with Yoliday
             </h3>
           </div>
 
-          <div className=" flex w-screen justify-center p-10">
+          <div className=" flex w-screen justify-center px-10 pb-20 mt-[10vh]">
             <div className="hidden xl:block w-4/5">
               <Image src={explore} alt="Explore" className=" w-full h-auto" />
             </div>
@@ -132,47 +158,48 @@ export default function Popular() {
             </div>
           </div>
         </div>
-        <div className="bg-[#FFF3F2] flex flex-col-reverse xl:flex-row  w-screen lg:p-12 items-center ">
+        <div className="bg-[#FFF3F2]  xl:mt-[12vh] flex flex-col-reverse xl:flex-row  w-screen lg:p-12 items-center ">
           <div className="xl:w-1/2 sm:s-full">
             <Image
               src={groupimg}
-              className="p-12 w-full"
+              className=" xl:p-14 px-4 w-full"
               alt="Home Background"
             />
-            <button className="xl:hidden block bg-orange-500 text-white py-4 px-6 rounded-md mx-auto my-5">
+            <button className="xl:hidden block bg-[#FF4902] text-white py-4 px-6 rounded-md mx-auto my-5">
               Explore More
             </button>
           </div>
-          <div className=" xl:w-1/2   xl:p-20 p-10  text-center xl:text-left">
+          <div className=" xl:w-1/2 xl:py-12 xl:pr-12 px-8 pt-8 text-center xl:text-left">
             <div className={poppins.className}>
-              <h2 className="my-10 text-2xl xl:text-3xl font-extrabold tracking-widest text-orange-500 mb-2 font-poppins">
+              <h2 className="xl:my-5 text-lg xl:text-2xl font-extrabold xl:tracking-[4px] tracking-[3px] text-[#FF4902] mb-4 font-poppins">
                 JOIN YOLIDAY EXPERIENCES
               </h2>
             </div>
             <div className={josefinSans.className}>
-              <h1 className="!leading-10 xl:my-5 text-2xl xl:text-4xl  font-bold tracking-wider flex flex-col  text-slate-600 xl:mb-2">
+              <h1 className=" xl:my-3  text-2xl xl:text-3xl  font-bold tracking-wider flex flex-col  text-[#232233] xl:mb-2">
                 WHERE MEMORIES BLOOM
               </h1>{" "}
-              <h1 className="!leading-10 xl:my-5 text-2xl xl:text-4xl  font-bold tracking-wider flex flex-col  text-slate-600 xl:mb-2">
+              <h1 className=" xl:my-3  text-2xl xl:text-3xl  font-bold tracking-wider flex flex-col  text-[#232233]  xl:mb-2">
                 LED BY YOUR TRIBE
               </h1>
-              <h3 className="text-xl xl:text-2xl font-light text-black mb-2 my-7">
-                Yoliday curates adventures crafted by fellow explorers, not
-                travel bots. These ‘people’ know every hidden gem, every winding
-                street, and every must-try dish – and they&apos;re ready to
-                share their insider knowledge with you. With Yoliday
+              <h3 className="text-xl xl:text-xl font-normal text-[#6C6C72] mb-5 my-7">
+                Yoliday adventures are crafted by fellow explorers, not travel
+                bots. These travelbuffs know every hidden gem, every winding
+                street, and every must-try dish–and they're ready to share the
+                treasures without you having to hunt them. With Yoliday
                 Experiences, you&apos;re not just ticking destinations off a
                 list – you&apos;re diving into authentic experiences, building
                 friendships..{" "}
               </h3>
-              <button className="hidden xl:block bg-orange-500 text-white py-4 px-6 rounded-md">
-                Explore More
-              </button>
             </div>
+
+            <button className="hidden xl:block bg-[#FF4902] text-white py-4 px-6 rounded-md">
+              Learn More
+            </button>
           </div>
         </div>
         <div
-          className="flex flex-col lg:flex-row md:flex-row  w-screen relative xl:min-h-[100vh] md:min-h-[50vh]"
+          className="flex flex-col lg:flex-row md:flex-row  w-screen relative xl:min-h-[100vh] "
           style={{
             backgroundImage: `url(${hills.src})`,
             backgroundSize: "cover",
@@ -180,29 +207,33 @@ export default function Popular() {
             backgroundPosition: "center center",
           }}
         >
-          <div className="lg:w-1/3 md:w-1/3 w-screen flex justify-center items-center">
+          <div className="lg:w-1/3 md:w-1/3 w-screen flex justify-center items-center  mx-auto ml-5 sm:ml-10 xl:ml-0">
             <Image
               src={phone2}
-              className="pt-10 lg:pl-[20vh] xl:w-[70vh] lg:w-[25vh] md:pl-[2vh] absolute bottom-0 "
+              className="pt-10 lg:pl-[20vh] xl:w-[70vh] lg:w-[25vh] md:pl-[2vh]  absolute bottom-0 "
               alt="Home Background"
             />
           </div>
-          <div className="mb-[70vh] sm:mb-0 lg:w-2/3 md:w-2/3 p-10 lg:pt-[15vh] ">
+          <div className="mb-[135vw] sm:mb-0 lg:w-2/3 md:w-2/3 p-4 py-6 xl:p-10 lg:pt-[15vh] ml-5">
             <div className={poppins.className}>
-              <h1 className="text-[24px] xl:text-4xl 2xl:text-5xl font-semibold tracking-wide text-white mb-5">
-                Embark on unforgettable Journey with Yoliday Experiences.
+              <h1 className="text-[24px] xl:text-4xl 2xl:text-5xl xl:leading-[50px] font-semibold tracking-wide text-white  p-2">
+                Embark on an unforgettable Journey with Yoliday Experiences.
               </h1>
             </div>
-            <h3 className="text-lg xl:text-xl 2xl:text-2xl font-light text-white mb-2  p-2">
+            <h3 className="mt-[-10px] text-justify text-lg xl:text-xl 2xl:text-2xl font-light text-white mb-2  p-2">
               Escape the ordinary with hidden waterfalls, late-night bar crawls
               turned karaoke stardom, and glacier conquests fueled by
               high-fives. Say goodbye to FOMO, and hello to Yoliday! Download
               the app - your next adventure awaits!
             </h3>
-            <Image src={Play} alt="google play" className="my-5" />
-            <form className="my-5">
-              <div className="relative flex items-stretch lg:w-3/4 ">
-                <label htmlFor="email" className="sr-only">
+            <Image
+              src={Play}
+              alt="google play"
+              className="my-5 xl:w-[35vh] w-[20vh]"
+            />
+            <form className="my-5 flex ">
+              <div className="relative flex align-middle items-stretch w-full lg:w-3/4 mb-4 ">
+                <label htmlFor="email" className="sr-only text-lg">
                   Enter Your Mail
                 </label>
                 <svg
@@ -210,8 +241,8 @@ export default function Popular() {
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
-                  stroke="orange"
-                  className="xl:w-[7vh] w-[4vh]  absolute mt-4  ml-5 "
+                  stroke="#FF4902"
+                  className="xl:w-[7vh] w-[4vh]  absolute mt-[1.3vh]  ml-[1.4vh]  xl:mt-[1vw]  xl:ml-[1.4vw] "
                 >
                   <path
                     strokeLinecap="round"
@@ -224,10 +255,10 @@ export default function Popular() {
                   type="text"
                   id="email"
                   name="email"
-                  className="w-full pl-[9vh] lg:pl-[15vh] px-4 py-1 xl:h-[12vh] h-[7vh] rounded-full border border-gray-300  focus:outline-none focus:border-blue-500"
+                  className="w-full pl-[7vh] text-base  sm:text-lg xl:pl-[7vw] px-4 py-1 xl:h-[5vw] h-[7vh] rounded-full border border-gray-300  focus:outline-none focus:border-blue-500"
                   placeholder="Enter Your Mail"
                 />
-                <button className="bg-orange-500 text-white px-5 py-2 m-2 2xl:m-3 absolute right-0 top-0 bottom-0 flex items-center rounded-full	">
+                <button className="bg-[#FF4902] text-white sm:text-lg text-base  xl:px-10 px-3 py-2 m-2 2xl:m-3 absolute right-0 top-0 bottom-0 flex items-center rounded-full	">
                   Subscribe
                 </button>
               </div>
