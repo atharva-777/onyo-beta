@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "../components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import lm from "../../public/images/lm.svg";
 
 import c1 from "../../public/images/Booking.svg";
 import c2 from "../../public/images/Sharing.svg";
@@ -18,7 +19,9 @@ import c4 from "../../public/images/Wagon.png";
 import c5 from "../../public/images/Hiking.png";
 import c6 from "../../public/images/Plane.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
-
+interface FeaturesProps {
+  onButtonClick: () => void;
+}
 const poppins = Poppins({
   weight: ["300", "400", "600", "800"], // Example with multiple weights
   style: "normal",
@@ -30,7 +33,7 @@ const josefinSans = Josefin_Sans({
 const inter = Inter({
   subsets: ["latin"],
 });
-export default function Features() {
+const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
   const data = [
     {
       imageUrl: c1,
@@ -71,7 +74,7 @@ export default function Features() {
   ];
   return (
     <>
-      <div className="text-center flex flex-col items-center justify-center w-4/5  xl:p-5 sm:p-2 lg:pt-20 lg:px-20 mx-auto">
+      <div className="xl:mt-10 text-center flex flex-col items-center justify-center w-4/5  xl:p-5 sm:p-2 lg:pt-20 lg:px-20 mx-auto">
         <div className={poppins.className}>
           <h2 className="text-xl xl:text-2xl 2xl:text-3xl font-[600] xl:tracking-[4px] tracking-[3px] text-[#FF4902] xl:mb-4 mb-2 font-poppins">
             KEY FEATURES
@@ -79,22 +82,31 @@ export default function Features() {
         </div>
         <div className={josefinSans.className}>
           <h1 className="text-xl xl:text-3xl 2xl:text-4xl px-2  font-bold tracking-wide text-[#191825] mb-2 xl:mb-4">
-            DISCOVER, SHARE, AND JOURNEY TOGETHER WITH THE ULTIMATE TRAVEL
+            DISCOVER, SHARE, AND EXPLORE TOGETHER IN THE ULTIMATE SEEKERS
             COMMUNITY
           </h1>
         </div>
         <h3 className="text-lg xl:text-xl xl:w-3/5 mx-auto font-normal  text-slate-500 mb-2">
-          Ladies and Gentlemen! Fasten your seatbelt as we embark on a new trip
-          with Yoliday.
+          Ladies and Gentlemen! Fasten your seatbelt as we embark on a new
+          experience with Yoliday.
         </h3>
+        <div className={poppins.className}>
+          <a
+            className="text-lg  text-[#FF4902] xl:mb-4 mb-2 font-poppins"
+            onClick={onButtonClick}
+          >
+            Learn More
+            <Image src={lm} alt={`leranmore`} className="inline-block ml-2" />
+          </a>
+        </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row md:flex-row w-screen items-center">
-        <div className="lg:pl-12 xl:w-1/3 sm:w-2/5 md:w-2/5 ">
+      <div className="flex flex-col lg:flex-row md:flex-row  items-center">
+        <div className="lg:pl-12 xl:w-1/3 sm:w-2/5 md:w-2/5  w-[70%]  p-10">
           <Image
             src={phone}
             alt="Home Background"
-            className="lg:pl-10 xl:w-[70vh]"
+            className="lg:pl-10 xl:w-[60vh] "
           />
         </div>
         <Carousel
@@ -110,14 +122,14 @@ export default function Features() {
             loop: true,
           }}
         >
-          <CarouselContent className=" xl:p-20   py-10  mx-10 sm:py-2 xl:w-auto lg:w-4/5 sm:mx-2   sm:w-auto ">
+          <CarouselContent className=" xl:p-20   py-10  mx-12 sm:py-2 xl:w-auto lg:w-4/5 sm:mx-2   sm:w-auto ">
             {data.map((item, index) => (
               <CarouselItem
                 key={index}
                 className=" md:basis-2/3 xl:basis-2/5 basics-1/1 align-middle my-auto py-3 card rounded-3xl p1-10 sm:pl-5"
               >
                 <Card
-                  className="xl:h-[85vh] h-[125vw] sm:h-[58vw] lg:h-[45vw] rounded-3xl align-middle my-auto transition duration-300 transform hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)]"
+                  className="xl:h-[85vh] h-[125vw] sm:h-[58vw] lg:h-[45vw] rounded-3xl align-middle my-auto transition duration-300 transform xl:hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)] hover:shadow-[0_25px_70px_-15px_rgba(0,0,0,0.2)]"
                   style={{ border: "none" }}
                 >
                   <CardContent className="rounded-3xl px-12 sm:px-7  grid justify-items-center align-middle my-auto text-center xl:px-9">
@@ -127,7 +139,7 @@ export default function Features() {
                       className="2xl:w-32 xl:w-21 xl:min-h-[25vh] 2xl:min-h-[20vh] 2xl:my-12 xl:my-6 object-cover"
                     />
                     <div className={inter.className}>
-                      <h3 className="	  my-4 xl:my-2 text-2xl xl:text-2xl 2xl:text-4xl font-extrabold m-3 font-poppins">
+                      <h3 className="	  my-4 xl:my-2 text-2xl xl:text-2xl 2xl:text-3xl font-extrabold m-3 font-poppins">
                         {item.heading}
                       </h3>
                     </div>
@@ -141,4 +153,5 @@ export default function Features() {
       </div>
     </>
   );
-}
+};
+export default Features;

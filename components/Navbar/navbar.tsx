@@ -8,7 +8,10 @@ const dm = DM_Sans({
   style: "normal",
   subsets: ["latin"],
 });
-export default function Navbar() {
+interface NavbarProps {
+  onButtonClick: () => void;
+}
+const Navbar: React.FC<NavbarProps> = ({ onButtonClick }) => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
 
   const toggleNavbar = () => {
@@ -17,11 +20,11 @@ export default function Navbar() {
   return (
     <>
       <nav className="">
-        <div className="w-screen flex flex-wrap items-center flex-row  p-2 bg-white z-10">
+        <div className="flex flex-wrap items-center flex-row  p-2 bg-white z-10">
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 xl:rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black xl:rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded={isNavbarVisible ? "true" : "false"}
             onClick={toggleNavbar}
@@ -44,12 +47,13 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <a className="xl:w-[17vh] 2xl:w-[15vh] w-[13vh] md:w-1/6 mx-2 xl:mx-5 xl:ml-[3.5rem]">
-            <Image src={logo} alt="Flowbite Logo" />
+          <a className="xl:w-[17vh] 2xl:w-[15vh] w-[9vh] sm:w-[11vh]   sm:mx-4 xl:mx-5 xl:ml-[3.5rem]">
+            <Image src={logo} alt=" Logo" />
           </a>
+          {/* mob view */}
           <div className="right-0 xl:hidden ml-auto flex items-end ">
-            <button className="ml-auto xl:hidden bg-[#FF4902] rounded-sm text-white px-4   py-2 xl:px-6 xl:py-3 xl:rounded-full">
-              Sign Up
+            <button className="text-base ml-auto xl:hidden bg-[#FF4902] rounded-lg text-white  sm:text-lg py-1 px-3   sm:py-4 sm:px-10 xl:py-3 ">
+              Download App
             </button>
           </div>
           <div
@@ -59,11 +63,11 @@ export default function Navbar() {
             id="navbar-default"
           >
             <div className={dm.className}>
-              <ul className="font-medium flex-col p-4 md:p-0 mt-4 flex xl:justify-end border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+              <ul className="font-medium flex-col p-4 md:p-0 mt-4 flex xl:justify-end border border-gray-100 rounded-lg bg-gray-50 xl:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
                 <li>
                   <a
                     href="#"
-                    className="block 2xl:text-lg xl:text-base text-base mt-3  lg-mt:2 w-[18vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block 2xl:text-lg xl:text-base text-base mt-3  xl-mt:2 w-[8vw] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Home
                   </a>
@@ -71,22 +75,25 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#"
-                    className="block 2xl:text-lg xl:text-base text-base mt-3  lg-mt:2 w-[18vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block 2xl:text-lg xl:text-base text-base mt-3  xl-mt:2 w-[10vw] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    onClick={onButtonClick}
                   >
-                    About Us
+                    About Yoliday
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     className="block 2xl:text-lg xl:text-base text-base mt-3  lg-mt:2 w-[18vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Experiences
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <button className="bg-[#FF4902] rounded-sm 2xl:text-lg text-base  w-[7vw] hidden xl:block text-white px-4 py-2  mt-3 lg:mt-1  rounded-full	">
-                    Sign Up
+                  {/* desktop view */}
+
+                  <button className="bg-[#FF4902] rounded-full 2xl:text-lg text-base  w-[13vw] hidden lg:block text-white px-4 py-2  mt-3 lg:mt-1 	">
+                    Download App
                   </button>
                 </li>
               </ul>
@@ -96,4 +103,5 @@ export default function Navbar() {
       </nav>
     </>
   );
-}
+};
+export default Navbar;
