@@ -114,7 +114,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
                 >
                   <Card className=" " style={{ border: "none" }}>
                     <CardContent
-                      className="flex justify-center  h-[50vh] lg:h-[60vh] md:h-[30vh] "
+                      className="flex justify-center  h-[50vh] xl:h-[60vh] md:h-[30vh] "
                       style={{
                         backgroundImage: `url(${item.src})`,
                         backgroundSize: "contain", // Use 'cover' to ensure the image covers the entire container
@@ -223,10 +223,10 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
             backgroundPosition: "center bottom", // Set to "center bottom"
           }}
         >
-          <div className=" md:w-[35%] relative w-screen flex justify-center items-end  mx-auto  xl:ml-0">
+          <div className=" md:w-[35%] relative w-screen min-h-[100vw] sm:min-h-0 flex justify-center items-end  mx-auto  xl:ml-0">
             <Image
               src={phone2}
-              className="lg:pl-[10vh]  max-h-auto sm:h-full sm:w-auto w-[30vh] md:pl-[2vh] align-self-end"
+              className="xl:pl-[10vh] absolute max-h-full w-auto object-contain md:pl-[2vh] align-self-end"
               alt="Home Background"
             />
           </div>
@@ -236,7 +236,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
                 Embark on an unforgettable Journey with Yoliday Experiences.
               </h1>
             </div>
-            <p className=" text-justify   lg:text-[1.5vw] lg:my-3 font-light text-white mb-2  p-2">
+            <p className=" text-justify  sm:text-[1.8vw] xl:text-[1.5vw] lg:my-3 font-light text-white mb-2  p-2">
               Escape the ordinary with hidden waterfalls, late-night bar crawls
               turned karaoke stardom, and glacier conquests fueled by
               high-fives. Say goodbye to FOMO, and hello to Yoliday! Download
@@ -245,7 +245,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
             <Image
               src={Play}
               alt="google play"
-              className="my-5 xl:w-[35vh] w-[19vh]"
+              className="my-5 xl:w-[35vh] w-[17vh]"
             />
             <form className="my-5 flex ">
               <div className="relative flex align-middle items-stretch w-full lg:w-3/4 mb-4 ">

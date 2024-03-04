@@ -63,7 +63,7 @@ const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
       imageUrl: c5,
       heading: "Join Yoliday-Curated Experiences",
       paragraph:
-        "Ditch the boring itinerary and join in unique travel experiences.",
+        "Ditch the boring itinerary and join in unique travel experiences. ",
     },
     {
       imageUrl: c6,
@@ -106,7 +106,7 @@ const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
           <Image
             src={phone}
             alt="Home Background"
-            className="lg:pl-10 xl:w-[60vh] "
+            className="lg:pl-10 xl:w-[55vh] "
           />
         </div>
         <Carousel
@@ -122,28 +122,30 @@ const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
             loop: true,
           }}
         >
-          <CarouselContent className=" xl:p-20   py-10  mx-12 sm:py-2 xl:w-auto lg:w-4/5 sm:mx-2   sm:w-auto ">
+          <CarouselContent className=" xl:p-20 py-10 mx-12 sm:py-2 xl:w-auto lg:w-4/5 sm:mx-2 sm:w-auto ">
             {data.map((item, index) => (
               <CarouselItem
                 key={index}
                 className=" md:basis-2/3 xl:basis-2/5 basics-1/1 align-middle my-auto py-3 card rounded-3xl p1-10 sm:pl-5"
               >
                 <Card
-                  className="xl:h-[85vh] h-[125vw] sm:h-[58vw] lg:h-[45vw] rounded-3xl align-middle my-auto transition duration-300 transform xl:hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)] hover:shadow-[0_25px_70px_-15px_rgba(0,0,0,0.2)]"
+                  className="xl:h-[38vw] 2xl:h-[37vw] h-[125vw] sm:h-[58vw] lg:h-[45vw] rounded-3xl flex align-middle my-auto transition duration-300 transform xl:hover:shadow-[0_50px_70px_-15px_rgba(0,0,0,0.2)] hover:shadow-[0_25px_70px_-15px_rgba(0,0,0,0.2)]"
                   style={{ border: "none" }}
                 >
-                  <CardContent className="rounded-3xl px-12 sm:px-7  grid justify-items-center align-middle my-auto text-center xl:px-9">
+                  <CardContent className="rounded-3xl px-12 sm:px-7  grid justify-items-center align-middle my-auto text-center xl:px-9 2xl:px-[1.9vw]">
                     <Image
                       src={item.imageUrl}
                       alt={`Item ${index + 1}`}
-                      className="2xl:w-32 xl:w-21 xl:min-h-[25vh] 2xl:min-h-[20vh] 2xl:my-12 xl:my-6 object-cover"
+                      className="2xl:w-auto xl:w-auto xl:min-h-[10vw] 2xl:min-h-[23vh] 2xl:my-9 xl:my-6 object-cover"
                     />
                     <div className={inter.className}>
-                      <h3 className="	  my-4 xl:my-2 text-2xl xl:text-2xl 2xl:text-3xl font-extrabold m-3 font-poppins">
+                      <h3 className="	  my-4 xl:my-2 text-2xl  sm:text-[2.8vw] xl:text-[1.8vw] font-extrabold m-3 font-poppins">
                         {item.heading}
                       </h3>
                     </div>
-                    <p className="text-gray-600 my-5">{item.paragraph}</p>
+                    <p className="text-gray-600 my-3 xl:my-5 2xl:text-[1vw]">
+                      {item.paragraph}
+                    </p>
                   </CardContent>
                 </Card>
               </CarouselItem>

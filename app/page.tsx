@@ -13,6 +13,7 @@ export default function Home() {
 
   const handleScrollToAdventure = () => {
     if (adventureRef.current) {
+      console.log("handleScrollToAdventure called");
       adventureRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };

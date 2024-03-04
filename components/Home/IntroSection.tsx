@@ -37,20 +37,20 @@ export default function IntroSection() {
 
   return (
     <div className={poppins.className}>
-      <div className="h-screen xl:h-[50vw] flex  justify-center relative">
+      <div className="py-8 xl:py-0  xl:h-[40vw] flex  justify-center relative mb-10 xl:mb-0">
         {/* Use the Image component */}
         <Image
           src={Homebg}
           alt="Home Background"
           layout="fill"
           objectFit="cover"
-          className="absolute  top-0 left-0 w-full max-h-[91vh] xl:max-h-[110vh]"
+          className="absolute  top-0 left-0 w-full h-full"
         />
         <div className="z-10 text-white flex flex-col xl:flex-row w-screen ">
-          <div className="lg:w-3/5 pl-3  lg:pr-8 lg:ml-[4vw]  p-5  flex align-middle flex-col">
+          <div className="xl:w-3/5 pl-3  xl:pr-8 xl:ml-[4vw] sm:ml-[4vw] sm:mt-[3vw] xl:mt-0  xl:p-5  flex align-middle flex-col">
             <div className="my-auto">
               <div className="flex items-center w-full">
-                <h1 className="text-[26px] sm:text-4xl  md:text-5xl lg:text-5xl xl:text-[3.5vw]  2xl:text-[3.8vw] 3xl:text-[90px] font-bold text-black">
+                <h1 className="text-[7vw] sm:text-4xl  md:text-5xl lg:text-5xl xl:text-[3.8vw]  2xl:text-[4vw] 3xl:text-[90px] font-bold text-black">
                   Find your Tribe,
                 </h1>
 
@@ -62,7 +62,7 @@ export default function IntroSection() {
                     exit={{ opacity: 0, y: -15 }}
                     transition={{ duration: 1 }}
                   >
-                    <h1 className="text-[26px] text-[#FC8211] sm:text-4xl   md:text-5xl lg:text-5xl xl:text-[3.5vw] 2xl:text-[3.8vw] 3xl:text-[90px] font-bold">
+                    <h1 className="text-[7vw] text-[#FC8211] sm:text-4xl   md:text-5xl lg:text-5xl xl:text-[3.8vw] 2xl:text-[4vw] 3xl:text-[90px] font-bold">
                       <span className="ml-3">{words[currentWordIndex]}</span>
                     </h1>
                   </motion.div>
@@ -80,12 +80,12 @@ export default function IntroSection() {
               <Image
                 src={Play}
                 alt="google play"
-                className="mt-5 lg:w-[35vh] w-[40vw] sm:w-[22vw] "
+                className="mt-5 xl:w-[15vw] w-[40vw] sm:w-[22vw] "
               />
             </div>
           </div>
 
-          <div className="lg:w-2/5 relative flex justify-center">
+          <div className="xl:w-2/5 relative flex justify-center">
             <Image
               src={exp}
               alt="Explore Image"
