@@ -69,13 +69,13 @@ const Navbar: React.FC<NavbarProps> = ({ onButtonClick }) => {
         </a>
         {/* mob view */}
         <div className="right-0 xl:hidden ml-auto flex items-end ">
-          <button
+          {/* <button
             className={`text-base ml-auto xl:hidden bg-[#FF4902] rounded-lg text-white  sm:text-lg py-1 px-3   sm:py-2 sm:px-6 xl:py-3 mr-2 xl:mr-0 ${
               !isNavbarVisible ? "block" : "hidden"
             }`}
           >
             Download App
-          </button>
+          </button> */}
           <button
             className={`text-base ml-auto xl:hidden  ${
               isNavbarVisible ? "block" : "hidden"
@@ -96,8 +96,9 @@ const Navbar: React.FC<NavbarProps> = ({ onButtonClick }) => {
               <li>
                 <a
                   href="#"
-                  className="block 2xl:text-lg xl:text-base text-base my-4  xl:mt-4 xl:my-0 xl:ml-[4vw] text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block xl:inline 2xl:text-lg xl:text-base text-base my-4  xl:mt-4 xl:my-0 xl:ml-[4vw] text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
+                  {/* remove xl:inline  while bringing button back*/}
                   Home
                 </a>
                 <hr className="xl:hidden h-px  bg-gray-200 border-0 dark:bg-gray-700 w-[80%]"></hr>
@@ -105,28 +106,21 @@ const Navbar: React.FC<NavbarProps> = ({ onButtonClick }) => {
               <li>
                 <a
                   href="#"
-                  className="block 2xl:text-lg xl:text-base text-base my-4   xl:mt-4 xl:my-0 xl:ml-[5vw]  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block xl:inline 2xl:text-lg xl:text-base text-base my-4   xl:mt-4 xl:my-0 xl:ml-[5vw]  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   onClick={handleAboutYolidayClick}
                 >
+                  {/* remove xl:inline  while bringing button back*/}
                   About Yoliday
                 </a>
                 <hr className="xl:hidden h-px  bg-gray-200 border-0 dark:bg-gray-700 w-[80%]"></hr>
               </li>
 
-              {/* <li>
-                  <a
-                    href="#"
-                    className="block 2xl:text-lg xl:text-base text-base mt-3  lg-mt:2 w-[18vh] px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Experiences
-                  </a>
-                </li> */}
               <li>
                 {/* desktop view */}
-
-                <button className="bg-[#FF4902] xl:rounded-full xl:ml-[3vw] rounded-lg my-4    xl:my-0 sm:text-lg py-1 px-3  sm:py-2 sm:px-3 2xl:text-lg text-base   text-white xl:px-7 xl:py-2  xl:mt-2 	">
+                {/* remove xl:inline  while bringing button back*/}
+                {/* <button className="bg-[#FF4902] xl:rounded-full xl:ml-[3vw] rounded-lg my-4    xl:my-0 sm:text-lg py-1 px-3  sm:py-2 sm:px-3 2xl:text-lg text-base   text-white xl:px-7 xl:py-2  xl:mt-2 	">
                   Download App
-                </button>
+                </button> */}
               </li>
             </ul>
           </div>
