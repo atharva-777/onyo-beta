@@ -14,12 +14,11 @@ const Adventure = React.forwardRef<HTMLIFrameElement>((props, ref) => {
         <h1 className="text-xl xl:text-3xl 2xl:text-4xl xl:px-[18vh]  font-bold tracking-wide text-[#191825] mb-2 xl:mb-4">
           YOLIDAY ADVENTURES UNVEILED: A JOURNEY THROUGH SHARED EXPERIENCES
         </h1>
-        {/* <Image src={c1} className="lg:pl-10 w-[90%]]" alt="Home Background" /> */}
         <iframe
           className=" lg:w-[90%] w-[95%] h-[47vw] my-10"
           id="adventures"
           ref={ref}
-          src="https://www.youtube.com/embed/hAJhfrPYEm0"
+          src="https://www.youtube.com/embed/cbixo8xttdw"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
           allowFullScreen

@@ -1,11 +1,12 @@
 "use client";
 import Autoplay from "embla-carousel-autoplay";
+import { Loader2 } from "lucide-react";
 
 import p1 from "../../public/images/Places1.png";
 import p2 from "../../public/images/Places2.png";
-import p3 from "../../public/images/Places3.png";
-import p4 from "../../public/images/Places4.png";
-import p5 from "../../public/images/Places5.png";
+import p3 from "../../public/images/Places3.svg";
+import p4 from "../../public/images/Places4.svg";
+import p5 from "../../public/images/Places5.svg";
 import { Card, CardContent } from "../components/ui/card";
 import {
   Carousel,
@@ -16,15 +17,16 @@ import {
 } from "../components/ui/carousel";
 import Image from "next/image";
 import groupimg from "../../public/images/group.svg";
-import explore from "../../public/images/exploret.png";
+import explore from "../../public/images/exploret.svg";
 import hills from "../../public/images/mountainbg.svg";
 import phone2 from "../../public/images/phone2.png";
 import Play from "../../public/images/googleplay.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
-import s1 from "../../public/images/Set-0.png";
+import s1 from "../../public/images/Set-0.svg";
 
-import s2 from "../../public/images/Set-1.png";
-import s3 from "../../public/images/Set-2.png";
+import s2 from "../../public/images/Set-1.svg";
+import s3 from "../../public/images/Set-2.svg";
+import { useState } from "react";
 interface PopularProps {
   onButtonClick: () => void;
 }
@@ -46,7 +48,48 @@ interface PopularProps {
 
 const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
   const data = [p1, p2, p3, p4, p5];
+  const [email, setEmail] = useState("");
+  const [succmsg, setSuccmsg] = useState("");
+  const [loading, setLoading] = useState(false);
 
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleNotifyMe = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      // Email is not in the correct format
+      setSuccmsg("*Enter Valid Email");
+      return;
+    }
+    try {
+      setLoading(true);
+      const response = await fetch(process.env.NEXT_PUBLIC_ENDPOINT!!, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+        }),
+      });
+
+      if (response.ok) {
+        setSuccmsg("Thanks. We will reach out to you soon.");
+        setLoading(false);
+      } else {
+        setSuccmsg("Request Failed.");
+        setLoading(false);
+      }
+    } catch (error) {
+      setSuccmsg("Request Failed.");
+      setLoading(false);
+      console.error("Error sending notification request:", error);
+    }
+  };
   return (
     <>
       <div className="text-center sm:w-3/5 xl:w-4/5 flex flex-col items-center justify-center  mx-auto">
@@ -60,7 +103,6 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
           EMBARK ON THRILLING HORIZONS WITH ADVENTURES!
         </h1>
       </div>
-
       <h3 className="text-lg xl:text-xl xl:w-3/5 mx-auto font-normal text-center  text-slate-500 mb-2">
         Explore, Connect, and Embark on Adventures Together with Yoliday
       </h3>
@@ -232,23 +274,27 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
           </div>
           <div className=" sm:mb-0 md:w-[65%] p-4 xl:p-10 sm:pr-10">
             <div className={poppins.className}>
-              <h1 className="text-[21px] sm:text-2xl lg:text-4xl xl:text-4xl 2xl:text-[3vw] xl:leading-[50px] 2xl:leading-[3.5vw] lg:leading-[50px] font-semibold tracking-wide text-white  p-2">
+              <h1 className="text-[21px] sm:text-1xl lg:text-4xl xl:text-4xl 2xl:text-[3vw] xl:leading-[50px] 2xl:leading-[3.5vw] lg:leading-[50px] font-semibold tracking-wide text-white  px-2 py-1   xl:p-2">
                 Embark on an unforgettable Journey with Yoliday Experiences.
               </h1>
             </div>
-            <p className=" text-justify  sm:text-[1.8vw] xl:text-[1.5vw] lg:my-3 font-light text-white mb-2  p-2">
+            <p className=" text-justify  sm:text-[1.8vw] xl:text-[1.5vw] lg:my-3 font-light text-white  px-2 py-1  xl:p-2">
               Escape the ordinary with hidden waterfalls, late-night bar crawls
               turned karaoke stardom, and glacier conquests fueled by
               high-fives. Say goodbye to FOMO, and hello to Yoliday! Download
               the app - your next adventure awaits!
             </p>
-            <Image
+            <p className=" text-justify  sm:text-[1.8vw] xl:text-[1.5vw] lg:my-3 font-light text-white py-1  px-2 xl:p-2">
+              Ready for the big reveal? Leave your email and be the first to
+              know when our app hits the scene!
+            </p>
+            {/* <Image
               src={Play}
               alt="google play"
               className="my-5 xl:w-[35vh] w-[17vh]"
-            />
-            <form className="my-5 flex ">
-              <div className="relative flex align-middle items-stretch w-full lg:w-3/4 mb-4 ">
+            /> */}
+            <form className="xl:mt-5 flex " onSubmit={handleNotifyMe}>
+              <div className="relative flex align-middle items-stretch w-full lg:w-3/4 mb-0 ">
                 <label htmlFor="email" className="sr-only text-lg">
                   Enter Your Mail
                 </label>
@@ -271,14 +317,35 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
                   type="text"
                   id="email"
                   name="email"
+                  value={email}
+                  onChange={handleEmailChange}
                   className="w-full pl-[7vh] text-base  sm:text-lg xl:pl-[6vw] px-4 py-1 xl:h-[5vw] h-[6vh] lg:h-[5vh] rounded-full border border-gray-300  focus:outline-none focus:border-blue-500"
                   placeholder="Enter Your Mail"
                 />
-                <button className="bg-[#FF4902] text-white sm:text-lg text-base  xl:px-10 px-6 py-2 m-2 2xl:m-3 absolute right-0 top-0 bottom-0 flex items-center rounded-full	">
-                  Get Notified
+                <button
+                  type="submit"
+                  className="bg-[#FF4902] text-white sm:text-lg text-base  xl:px-10 px-6 py-2 m-1 sm:m-2 2xl:m-3 absolute right-0 top-0 bottom-0 flex items-center rounded-full	"
+                >
+                  {loading ? (
+                    <>
+                      <p>Sending</p>
+                      <Loader2 className="animate-spin ml-2" />
+                    </>
+                  ) : (
+                    <p>Get Notified</p>
+                  )}
                 </button>
               </div>
             </form>
+            <div className="mb-5 mt-3 sm:mt-0 text-justify text-[3.5vw] ml-3 sm:text-[1.8vw] xl:text-[1.1vw]   font-light text-white  xl:p-2">
+              <p
+                className={`min-h-[4vw] sm:min-h-[1.8vw] ${
+                  succmsg.startsWith("*") ? "text-red-600 font-normal" : ""
+                }`}
+              >
+                {succmsg}
+              </p>
+            </div>
           </div>
         </div>
       </div>

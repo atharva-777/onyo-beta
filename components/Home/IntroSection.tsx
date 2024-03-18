@@ -47,7 +47,7 @@ export default function IntroSection() {
           className="absolute  top-0 left-0 w-full h-full"
         />
         <div className="z-10 text-white flex flex-col xl:flex-row w-screen ">
-          <div className="xl:w-3/5 pl-3  xl:pr-8 xl:ml-[4vw] sm:ml-[4vw] sm:mt-[3vw] xl:mt-0  xl:p-5  flex align-middle flex-col">
+          <div className="xl:w-3/5 px-3  xl:pr-8 xl:ml-[4vw] sm:ml-[4vw] sm:mt-[3vw] xl:mt-0  xl:p-5  flex align-middle flex-col">
             <div className="my-auto">
               <div className="flex items-center w-full">
                 <h1 className="text-[7vw] sm:text-4xl  md:text-5xl lg:text-5xl xl:text-[3.8vw]  2xl:text-[4vw] 3xl:text-[90px] font-bold text-black">
@@ -74,14 +74,14 @@ export default function IntroSection() {
                 great memories, join experiences curated by others.
               </p>
               <p className="text-lg sm:text-xl  md:text-2xl xl:text-2xl xl:leading-[31px] sm:leading-[30px] leading-[23px]  2xl:leading-[2.6vw]   text-justify mt-3 xl:mt-[0.5vw] text-[#515050]  xl:pt-5 xl:w-[90%] 2xl:text-[2vw] 3xl:text-[50px]	">
-                Download Yoliday and say &quot;Yo!&quot; to your next travel
+                Say &quot;Yo!&quot; to your next travel
                 story!
               </p>
-              <Image
+              {/* <Image
                 src={Play}
                 alt="google play"
                 className="mt-5 xl:w-[15vw] w-[40vw] sm:w-[22vw] "
-              />
+              /> */}
             </div>
           </div>
 
