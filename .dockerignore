@@ -1,0 +1,9 @@
+node_modules
+
+Dockerfile
+
+package-lock.json
+
+yarn-lock.json
+
+pnpm-lock.yaml

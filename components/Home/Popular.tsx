@@ -1,51 +1,51 @@
-"use client";
-import Autoplay from "embla-carousel-autoplay";
+"use client"
+import Autoplay from "embla-carousel-autoplay"
 
-import p1 from "../../public/images/Places1.png";
-import p2 from "../../public/images/Places2.png";
-import p3 from "../../public/images/Places3.png";
-import p4 from "../../public/images/Places4.png";
-import p5 from "../../public/images/Places5.png";
-import { Card, CardContent } from "../components/ui/card";
+import p1 from "../../public/images/Places1.png"
+import p2 from "../../public/images/Places2.png"
+import p3 from "../../public/images/Places3.png"
+import p4 from "../../public/images/Places4.png"
+import p5 from "../../public/images/Places5.png"
+import { Card, CardContent } from "../components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../components/ui/carousel";
-import Image from "next/image";
-import groupimg from "../../public/images/group.svg";
-import explore from "../../public/images/exploret.png";
-import hills from "../../public/images/mountainbg.svg";
-import phone2 from "../../public/images/phone2.png";
-import Play from "../../public/images/googleplay.png";
-import { Inter, Josefin_Sans, Poppins } from "next/font/google";
-import s1 from "../../public/images/Set-0.png";
+} from "../components/ui/carousel"
+import Image from "next/image"
+import groupimg from "../../public/images/group.svg"
+import explore from "../../public/images/exploret.png"
+import hills from "../../public/images/mountainbg.svg"
+import phone2 from "../../public/images/phone2.png"
+import Play from "../../public/images/googleplay.png"
+import { Inter, Josefin_Sans, Poppins } from "next/font/google"
+import s1 from "../../public/images/Set-0.png"
 
-import s2 from "../../public/images/Set-1.png";
-import s3 from "../../public/images/Set-2.png";
+import s2 from "../../public/images/Set-1.png"
+import s3 from "../../public/images/Set-2.png"
 interface PopularProps {
-  onButtonClick: () => void;
+  onButtonClick: () => void
 }
 const josefinSans = Josefin_Sans({
   subsets: ["latin"], // Adjust as needed
-});
+})
 const inter = Inter({
   subsets: ["latin"],
-});
+})
 const poppins = Poppins({
   weight: ["300", "400", "600", "800"], // Example with multiple weights
   style: "normal",
   subsets: ["latin"],
-});
+})
 
 interface PopularProps {
-  onButtonClick: () => void;
+  onButtonClick: () => void
 }
 
 const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
-  const data = [p1, p2, p3, p4, p5];
+  const data = [p1, p2, p3, p4, p5]
 
   return (
     <>
@@ -283,6 +283,6 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
         </div>
       </div>
     </>
-  );
-};
-export default Popular;
+  )
+}
+export default Popular
