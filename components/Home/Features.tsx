@@ -8,31 +8,31 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import lm from "../../public/images/lm.svg";
+} from "../components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+import lm from "../../public/images/lm.svg"
 
-import c1 from "../../public/images/Booking.svg";
-import c2 from "../../public/images/Sharing.svg";
-import c3 from "../../public/images/Traveller.png";
-import c4 from "../../public/images/Wagon.png";
-import c5 from "../../public/images/Hiking.png";
-import c6 from "../../public/images/Plane.png";
-import { Inter, Josefin_Sans, Poppins } from "next/font/google";
+import c1 from "../../public/images/Booking.svg"
+import c2 from "../../public/images/Sharing.svg"
+import c3 from "../../public/images/Traveller.png"
+import c4 from "../../public/images/Wagon.png"
+import c5 from "../../public/images/Hiking.png"
+import c6 from "../../public/images/Plane.png"
+import { Inter, Josefin_Sans, Poppins } from "next/font/google"
 interface FeaturesProps {
-  onButtonClick: () => void;
+  onButtonClick: () => void
 }
 const poppins = Poppins({
   weight: ["300", "400", "600", "800"], // Example with multiple weights
   style: "normal",
   subsets: ["latin"],
-});
+})
 const josefinSans = Josefin_Sans({
   subsets: ["latin"], // Adjust as needed
-});
+})
 const inter = Inter({
   subsets: ["latin"],
-});
+})
 const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
   const data = [
     {
@@ -71,7 +71,7 @@ const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
       paragraph:
         "Miss on nothing with our customized event notifications for you.",
     },
-  ];
+  ]
   return (
     <>
       <div className="xl:mt-10 text-center flex flex-col items-center justify-center w-4/5  xl:p-5 sm:p-2 lg:pt-20 lg:px-20 mx-auto">
@@ -154,6 +154,6 @@ const Features: React.FC<FeaturesProps> = ({ onButtonClick }) => {
         </Carousel>
       </div>
     </>
-  );
-};
-export default Features;
+  )
+}
+export default Features

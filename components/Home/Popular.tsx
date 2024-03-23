@@ -1,6 +1,6 @@
-"use client";
-import Autoplay from "embla-carousel-autoplay";
-import { Loader2 } from "lucide-react";
+"use client"
+import Autoplay from "embla-carousel-autoplay"
+import { Loader2 } from "lucide-react"
 
 import p1 from "../../public/images/Places1.webp";
 import p2 from "../../public/images/Places2.webp";
@@ -24,49 +24,49 @@ import Play from "../../public/images/googleplay.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 import s1 from "../../public/images/Set-0.svg";
 
-import s2 from "../../public/images/Set-1.svg";
-import s3 from "../../public/images/Set-2.svg";
-import { useState } from "react";
+import s2 from "../../public/images/Set-1.svg"
+import s3 from "../../public/images/Set-2.svg"
+import { useState } from "react"
 interface PopularProps {
-  onButtonClick: () => void;
+  onButtonClick: () => void
 }
 const josefinSans = Josefin_Sans({
   subsets: ["latin"], // Adjust as needed
-});
+})
 const inter = Inter({
   subsets: ["latin"],
-});
+})
 const poppins = Poppins({
   weight: ["300", "400", "600", "800"], // Example with multiple weights
   style: "normal",
   subsets: ["latin"],
-});
+})
 
 interface PopularProps {
-  onButtonClick: () => void;
+  onButtonClick: () => void
 }
 
 const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
-  const data = [p1, p2, p3, p4, p5];
-  const [email, setEmail] = useState("");
-  const [succmsg, setSuccmsg] = useState("");
-  const [loading, setLoading] = useState(false);
+  const data = [p1, p2, p3, p4, p5]
+  const [email, setEmail] = useState("")
+  const [succmsg, setSuccmsg] = useState("")
+  const [loading, setLoading] = useState(false)
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
-  };
+    setEmail(event.target.value)
+  }
 
   const handleNotifyMe = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    event.preventDefault()
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
     if (!emailRegex.test(email)) {
       // Email is not in the correct format
-      setSuccmsg("*Enter Valid Email");
-      return;
+      setSuccmsg("*Enter Valid Email")
+      return
     }
     try {
-      setLoading(true);
+      setLoading(true)
       const response = await fetch(process.env.NEXT_PUBLIC_ENDPOINT!!, {
         method: "POST",
         headers: {
@@ -75,21 +75,21 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
         body: JSON.stringify({
           email: email,
         }),
-      });
+      })
 
       if (response.ok) {
-        setSuccmsg("Thanks. We will reach out to you soon.");
-        setLoading(false);
+        setSuccmsg("Thanks. We will reach out to you soon.")
+        setLoading(false)
       } else {
-        setSuccmsg("Request Failed.");
-        setLoading(false);
+        setSuccmsg("Request Failed.")
+        setLoading(false)
       }
     } catch (error) {
-      setSuccmsg("Request Failed.");
-      setLoading(false);
-      console.error("Error sending notification request:", error);
+      setSuccmsg("Request Failed.")
+      setLoading(false)
+      console.error("Error sending notification request:", error)
     }
-  };
+  }
   return (
     <>
       <div className="text-center sm:w-3/5 xl:w-4/5 flex flex-col items-center justify-center  mx-auto">
@@ -350,6 +350,6 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
         </div>
       </div>
     </>
-  );
-};
-export default Popular;
+  )
+}
+export default Popular

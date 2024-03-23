@@ -1,0 +1,11 @@
+node_modules
+
+Dockerfile
+
+package-lock.json
+
+yarn-lock.json
+
+.env.local
+
+pnpm-lock.yaml

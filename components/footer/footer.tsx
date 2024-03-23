@@ -1,17 +1,18 @@
-import logo from "../../public/images/logo.png";
-import Image from "next/image";
-import em from "../../public/images/em.svg";
-import ig from "../../public/images/ig.svg";
-import lin from "../../public/images/in.svg";
-import fb from "../../public/images/fb.svg";
-import yt from "../../public/images/youtube.svg";
+import logo from "../../public/images/logo.png"
+import Image from "next/image"
+import em from "../../public/images/em.svg"
+import ig from "../../public/images/ig.svg"
+import lin from "../../public/images/in.svg"
+import fb from "../../public/images/fb.svg"
+import yt from "../../public/images/youtube.svg"
 
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google"
 const beviet = Be_Vietnam_Pro({
   weight: ["300", "400", "900"],
   style: "normal",
   subsets: ["latin"],
-});
+})
+
 export default function Footer() {
   return (
     <>
@@ -59,5 +60,5 @@ export default function Footer() {
         </div>
       </footer>
     </>
-  );
+  )
 }
