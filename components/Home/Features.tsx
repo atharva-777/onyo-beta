@@ -1,5 +1,5 @@
 "use client";
-import phone from "../../public/images/phone.png";
+import phone from "../../public/images/phone.webp";
 import Image from "next/image";
 import { Card, CardContent } from "../components/ui/card";
 import {

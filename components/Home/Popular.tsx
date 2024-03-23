@@ -2,11 +2,11 @@
 import Autoplay from "embla-carousel-autoplay";
 import { Loader2 } from "lucide-react";
 
-import p1 from "../../public/images/Places1.png";
-import p2 from "../../public/images/Places2.png";
-import p3 from "../../public/images/Places3.svg";
-import p4 from "../../public/images/Places4.svg";
-import p5 from "../../public/images/Places5.svg";
+import p1 from "../../public/images/Places1.webp";
+import p2 from "../../public/images/Places2.webp";
+import p3 from "../../public/images/Places3.webp";
+import p4 from "../../public/images/Places4.webp";
+import p5 from "../../public/images/Places5.webp";
 import { Card, CardContent } from "../components/ui/card";
 import {
   Carousel,
@@ -18,8 +18,8 @@ import {
 import Image from "next/image";
 import groupimg from "../../public/images/group.svg";
 import explore from "../../public/images/exploret.svg";
-import hills from "../../public/images/mountainbg.svg";
-import phone2 from "../../public/images/phone2.png";
+import hills from "../../public/images/mountainbg.webp";
+import phone2 from "../../public/images/phone2.webp";
 import Play from "../../public/images/googleplay.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 import s1 from "../../public/images/Set-0.svg";
@@ -198,10 +198,10 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
               <Image src={explore} alt="Explore" className=" w-full h-auto" />
             </div>
             <div className="flex flex-wrap xl:hidden">
-              <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 p-5">
+              <div className="w-full flex justify-center  sm:w-1/2 lg:w-1/3 mb-4 md:mb-0 p-5">
                 <Image src={s1} alt="Set 0" className="w-50" />
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0  p-5">
+              <div className="w-full  flex justify-center  sm:w-1/2 lg:w-1/3 mb-4 sm:mb-0  p-5">
                 <Image src={s2} alt="Set 1" className="w-50" />
               </div>
               <div className="w-full flex justify-center lg:w-1/3  p-5">
@@ -257,7 +257,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
           </div>
         </div>
         <div
-          className="flex flex-col-reverse lg:flex-row md:flex-row pt-10 relative  "
+          className="flex flex-col-reverse lg:flex-row sm:flex-row pt-10 relative  "
           style={{
             backgroundImage: `url(${hills.src})`,
             backgroundSize: "cover",
@@ -265,14 +265,14 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
             backgroundPosition: "center bottom", // Set to "center bottom"
           }}
         >
-          <div className=" md:w-[35%] relative w-screen min-h-[100vw] sm:min-h-0 flex justify-center items-end  mx-auto  xl:ml-0">
+          <div className=" sm:w-[35%] relative w-screen min-h-[100vw] sm:min-h-0 flex justify-center items-end  mx-auto  xl:ml-0">
             <Image
               src={phone2}
-              className="xl:pl-[10vh] absolute max-h-full w-auto object-contain md:pl-[2vh] align-self-end"
+              className="xl:pl-[10vh] absolute max-h-full w-auto object-contain sm:pl-[2vh] align-self-end"
               alt="Home Background"
             />
           </div>
-          <div className=" sm:mb-0 md:w-[65%] p-4 xl:p-10 sm:pr-10">
+          <div className=" sm:mb-0 sm:w-[65%] p-4 xl:p-10 sm:pr-10">
             <div className={poppins.className}>
               <h1 className="text-[21px] sm:text-1xl lg:text-4xl xl:text-4xl 2xl:text-[3vw] xl:leading-[50px] 2xl:leading-[3.5vw] lg:leading-[50px] font-semibold tracking-wide text-white  px-2 py-1   xl:p-2">
                 Embark on an unforgettable Journey with Yoliday Experiences.

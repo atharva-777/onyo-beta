@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Homebg from "../../public/images/homepagebg.png";
-import exp from "../../public/images/exploreimages.png";
+import Homebg from "../../public/images/homepagebg.webp";
+import exp from "../../public/images/exploreimages.webp";
 import { Card, CardContent } from "../components/ui/card";
 import {
   Carousel,
@@ -13,10 +13,10 @@ import {
 import Play from "../../public/images/googleplay.png";
 
 import Autoplay from "embla-carousel-autoplay";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import React, { useState, useEffect } from "react";
 
-const poppins = Poppins({
+const poppins = Inter({
   weight: ["300", "400", "600"],
   style: "normal",
   subsets: ["latin"],
@@ -74,8 +74,7 @@ export default function IntroSection() {
                 great memories, join experiences curated by others.
               </p>
               <p className="text-lg sm:text-xl  md:text-2xl xl:text-2xl xl:leading-[31px] sm:leading-[30px] leading-[23px]  2xl:leading-[2.6vw]   text-justify mt-3 xl:mt-[0.5vw] text-[#515050]  xl:pt-5 xl:w-[90%] 2xl:text-[2vw] 3xl:text-[50px]	">
-                Say &quot;Yo!&quot; to your next travel
-                story!
+                Say &quot;Yo!&quot; to your next travel story!
               </p>
               {/* <Image
                 src={Play}
