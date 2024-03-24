@@ -13,10 +13,16 @@ import {
 import Play from "../../public/images/googleplay.png";
 
 import Autoplay from "embla-carousel-autoplay";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import React, { useState, useEffect } from "react";
 
 const poppins = Inter({
+  weight: ["300", "400", "600"],
+  style: "normal",
+  subsets: ["latin"],
+});
+
+const poppins2 = Poppins({
   weight: ["300", "400", "600"],
   style: "normal",
   subsets: ["latin"],
@@ -36,7 +42,7 @@ export default function IntroSection() {
   }, []);
 
   return (
-    <div className={poppins.className}>
+    <div >
       <div className="py-8 xl:py-0  xl:h-[40vw] flex  justify-center relative mb-10 xl:mb-0">
         {/* Use the Image component */}
         <Image
@@ -49,7 +55,8 @@ export default function IntroSection() {
         <div className="z-10 text-white flex flex-col xl:flex-row w-screen ">
           <div className="xl:w-3/5 px-3  xl:pr-8 xl:ml-[4vw] sm:ml-[4vw] sm:mt-[3vw] xl:mt-0  xl:p-5  flex align-middle flex-col">
             <div className="my-auto">
-              <div className="flex items-center w-full">
+              <div  className={poppins2.className}>
+              <div  className="flex items-center w-full">
                 <h1 className="text-[7vw] sm:text-4xl  md:text-5xl lg:text-5xl xl:text-[3.8vw]  2xl:text-[4vw] 3xl:text-[90px] font-bold text-black">
                   Find your Tribe,
                 </h1>
@@ -68,7 +75,8 @@ export default function IntroSection() {
                   </motion.div>
                 </AnimatePresence>
               </div>
-
+              </div>
+              <div className={poppins.className}>
               <p className="text-lg sm:text-xl md:text-2xl xl:text-2xl xl:leading-[31px] sm:leading-[30px]  leading-[23px] 2xl:leading-[2.6vw]  text-justify md:mt-2 xl:mt-0 text-[#515050]  xl:pt-5 xl:w-[90%] 2xl:text-[2vw] 3xl:text-[50px]	">
                 Connect with fellow explorers for shared adventures. Create
                 great memories, join experiences curated by others.
@@ -76,6 +84,7 @@ export default function IntroSection() {
               <p className="text-lg sm:text-xl  md:text-2xl xl:text-2xl xl:leading-[31px] sm:leading-[30px] leading-[23px]  2xl:leading-[2.6vw]   text-justify mt-3 xl:mt-[0.5vw] text-[#515050]  xl:pt-5 xl:w-[90%] 2xl:text-[2vw] 3xl:text-[50px]	">
                 Say &quot;Yo!&quot; to your next travel story!
               </p>
+              </div>
               {/* <Image
                 src={Play}
                 alt="google play"
