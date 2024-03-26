@@ -16,7 +16,7 @@ import {
   CarouselPrevious,
 } from "../components/ui/carousel";
 import Image from "next/image";
-import groupimg from "../../public/images/group.svg";
+import groupimg from "../../public/images/group.webp";
 import explore from "../../public/images/exploret.svg";
 import hills from "../../public/images/mountainbg.webp";
 import phone2 from "../../public/images/phone2.webp";
