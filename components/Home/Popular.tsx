@@ -76,18 +76,21 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
           email: email,
         }),
       });
+      // console.log("Error sending notification request:", response);
 
       if (response.ok) {
         setSuccmsg("Thanks. We will reach out to you soon.");
         setLoading(false);
       } else {
+        console.log(response);
+
         setSuccmsg("Request Failed.");
         setLoading(false);
       }
     } catch (error) {
       setSuccmsg("Request Failed.");
       setLoading(false);
-      console.error("Error sending notification request:", error);
+      console.log("Error sending notification request:", error);
     }
   };
   return (
@@ -100,7 +103,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
         </div>
         <div className={josefinSans.className}></div>
         <h1 className="text-xl xl:text-3xl 2xl:text-4xl px-2  font-bold tracking-wide text-[#191825] mb-2 xl:mb-4">
-          EMBARK ON THRILLING HORIZONS WITH ADVENTURES!
+          EMBARK ON THRILLING HORIZONS WITH YOLIDAY ADVENTURES!
         </h1>
       </div>
       <h3 className="text-lg xl:text-xl xl:w-3/5 mx-auto font-normal text-center  text-slate-500 mb-2">
@@ -202,10 +205,10 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
                 <Image src={s1} alt="Set 0" className="w-50" />
               </div>
               <div className="w-full  flex justify-center  sm:w-1/2 lg:w-1/3 mb-4 sm:mb-0  p-5">
-                <Image src={s2} alt="Set 1" className="w-50" />
+                <Image src={s3} alt="Set 1" className="w-50" />
               </div>
               <div className="w-full flex justify-center lg:w-1/3  p-5">
-                <Image src={s3} alt="Set 2" className="w-50" />
+                <Image src={s2} alt="Set 2" className="w-50" />
               </div>
             </div>
           </div>
