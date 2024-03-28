@@ -156,7 +156,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
                 >
                   <Card className=" " style={{ border: "none" }}>
                     <CardContent
-                      className="flex justify-center  h-[50vh] xl:h-[60vh] md:h-[30vh] "
+                      className="flex justify-center  h-[50vh] lg:h-[35vw] sm:h-[30vh] "
                       style={{
                         backgroundImage: `url(${item.src})`,
                         backgroundSize: "contain", // Use 'cover' to ensure the image covers the entire container
