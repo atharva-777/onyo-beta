@@ -21,7 +21,11 @@ import Script from "next/script";
   return (
     <>
     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-BN7FLE3G21"></Script>
-     <Script> {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-BN7FLE3G21'); `}</Script>
+     <Script> 
+      {`window.dataLayer = window.dataLayer || []; 
+     function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); 
+     gtag('config', 'G-BN7FLE3G21'); `}
+     </Script>
       <Navbar onButtonClick={handleScrollToAdventure} />
       <IntroSection />
       <Features onButtonClick={handleScrollToAdventure} />
