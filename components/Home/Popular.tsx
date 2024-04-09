@@ -297,7 +297,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
               className="my-5 xl:w-[35vh] w-[17vh]"
             /> */}
             <form className="xl:mt-5 flex " onSubmit={handleNotifyMe}>
-              <div className="relative flex align-middle items-stretch w-full lg:w-3/4 mb-0 ">
+              <div className="relative flex align-middle items-stretch w-full lg:w-5/6 mb-0 ">
                 <label htmlFor="email" className="sr-only text-lg">
                   Enter Your Mail
                 </label>
