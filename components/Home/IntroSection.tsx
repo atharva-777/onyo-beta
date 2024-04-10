@@ -137,7 +137,7 @@ export default function IntroSection() {
               /> */}
               <div className="xl:w-full sm:w-4/5 xl:block">
                 <form className="mt-5 flex " onSubmit={handleNotifyMe}>
-                  <div className="relative flex align-middle items-stretch w-full lg:w-5/6 mb-0 ">
+                  <div className="relative flex align-middle items-stretch w-full  mb-0 ">
                     <label htmlFor="email" className="sr-only text-lg">
                       Enter Your Mail
                     </label>
