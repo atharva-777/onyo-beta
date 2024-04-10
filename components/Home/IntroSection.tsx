@@ -17,13 +17,13 @@ import Autoplay from "embla-carousel-autoplay";
 import { Inter, Poppins } from "next/font/google";
 import React, { useState, useEffect } from "react";
 
-const poppins = Inter({
+const inter = Inter({
   weight: ["300", "400", "600"],
   style: "normal",
   subsets: ["latin"],
 });
 
-const poppins2 = Poppins({
+const poppins = Poppins({
   weight: ["300", "400", "600"],
   style: "normal",
   subsets: ["latin"],
@@ -100,7 +100,7 @@ export default function IntroSection() {
         <div className="z-10 text-white flex flex-col xl:flex-row w-screen ">
           <div className="xl:w-3/5 px-3  xl:pr-8 xl:ml-[4vw] sm:ml-[4vw] sm:mt-[3vw] xl:mt-0  xl:p-5  flex align-middle flex-col">
             <div className="my-auto">
-              <div className={poppins2.className}>
+              <div className={poppins.className}>
                 <div className="flex items-center w-full">
                   <h1 className="text-[7vw] sm:text-4xl  md:text-5xl lg:text-5xl xl:text-[3.8vw]  2xl:text-[4vw] 3xl:text-[90px] font-bold text-black">
                     Find your Tribe,
@@ -121,7 +121,7 @@ export default function IntroSection() {
                   </AnimatePresence>
                 </div>
               </div>
-              <div className={poppins.className}>
+              <div className={inter.className}>
                 <p className="text-lg sm:text-xl md:text-2xl xl:text-2xl xl:leading-[31px] sm:leading-[30px]  leading-[23px] 2xl:leading-[2.6vw]  text-justify md:mt-2 xl:mt-0 text-[#515050]  xl:pt-5 xl:w-[90%] 2xl:text-[2vw] 3xl:text-[50px]	">
                   Connect with fellow explorers for shared adventures. Create
                   great memories, join experiences curated by others.
@@ -135,8 +135,8 @@ export default function IntroSection() {
                 alt="google play"
                 className="mt-5 xl:w-[15vw] w-[40vw] sm:w-[22vw] "
               /> */}
-              <div className="hidden xl:block">
-                <form className="xl:mt-5 flex " onSubmit={handleNotifyMe}>
+              <div className="xl:w-full sm:w-4/5 xl:block">
+                <form className="mt-5 flex " onSubmit={handleNotifyMe}>
                   <div className="relative flex align-middle items-stretch w-full lg:w-5/6 mb-0 ">
                     <label htmlFor="email" className="sr-only text-lg">
                       Enter Your Mail
@@ -167,7 +167,7 @@ export default function IntroSection() {
                     />
                     <button
                       type="submit"
-                      className="bg-[#FF4902] text-white sm:text-lg text-base  xl:px-10 px-6 py-2 m-1 sm:m-2 2xl:m-3 absolute right-0 top-0 bottom-0 flex items-center rounded-full	"
+                      className="bg-[#FF4902] text-white sm:text-lg text-base  xl:px-8 px-6 py-2 m-1 sm:m-2 2xl:m-3 absolute right-0 top-0 bottom-0 flex items-center rounded-full	"
                     >
                       {loading ? (
                         <>
