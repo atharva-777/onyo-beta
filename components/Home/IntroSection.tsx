@@ -162,7 +162,7 @@ export default function IntroSection() {
                       name="email"
                       value={email}
                       onChange={handleEmailChange}
-                      className="w-full pl-[7vh] text-base pr-[43vw] sm:pr-[25vw]  md:pr-[22vw]  lg:pr-[18vw] sm:text-lg xl:pl-[6vw] px-4 py-1 xl:h-[5vw] h-[6vh] lg:h-[5vh] rounded-full border border-gray-300  focus:outline-none focus:border-blue-500"
+                      className="w-full pl-[7vh] text-base pr-[43vw] sm:pr-[25vw]  md:pr-[22vw] text-black lg:pr-[18vw] sm:text-lg xl:pl-[6vw] px-4 py-1 xl:h-[5vw] h-[6vh] lg:h-[5vh] rounded-full border border-gray-300  focus:outline-none focus:border-blue-500"
                       placeholder="Enter Your Mail"
                     />
                     <button
