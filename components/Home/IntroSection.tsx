@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Homebg from "../../public/images/homepagebg.webp";
 import exp from "../../public/images/exploreimages.webp";
+import iPhone from "../../public/images/iPhone.png";
 import { Card, CardContent } from "../components/ui/card";
 import {
   Carousel,
@@ -127,7 +128,8 @@ export default function IntroSection() {
                   great memories, join experiences curated by others.
                 </p>
                 <p className="text-lg sm:text-xl  md:text-2xl xl:text-2xl xl:leading-[31px] sm:leading-[30px] leading-[23px]  2xl:leading-[2.6vw]   text-justify mt-3 xl:mt-[0.5vw] text-[#515050]  xl:pt-5 xl:w-[90%] 2xl:text-[2vw] 3xl:text-[50px]	">
-                  Say &quot;Yo!&quot; to your next travel story!
+                  Yoliday is in Alpha! Join and be the first to say
+                  &#8220;Yo!&#8221; to your next travel story!
                 </p>
               </div>
               {/* <Image
@@ -175,29 +177,29 @@ export default function IntroSection() {
                           <Loader2 className="animate-spin ml-2" />
                         </>
                       ) : (
-                        <p>Get Notified</p>
+                        <p>Join Alpha</p>
                       )}
                     </button>
                   </div>
                 </form>
                 <div className="mb-5 mt-3 sm:mt-0 text-justify text-[3.5vw] ml-3 sm:text-[1.8vw] xl:text-[1.1vw]   font-light text-white  xl:p-2">
-              <p
-                className={`min-h-[4vw] sm:min-h-[1.8vw] ${
-                  succmsg.startsWith("*") ? "text-red-600 font-normal" : ""
-                }`}
-              >
-                {succmsg}
-              </p>
-            </div>
+                  <p
+                    className={`min-h-[4vw] sm:min-h-[1.8vw] ${
+                      succmsg.startsWith("*") ? "text-red-600 font-normal" : ""
+                    }`}
+                  >
+                    {succmsg}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="xl:w-2/5 relative flex justify-center">
             <Image
-              src={exp}
+              src={iPhone}
               alt="Explore Image"
-              className=" lg:w-full lg:p-5 sm:w-[75%] w-[90%] object-contain"
+              className=" lg:w-full lg:p-5 sm:w-[75%] w-[90%] object-bottom object-contain -mb-5"
             />
           </div>
         </div>

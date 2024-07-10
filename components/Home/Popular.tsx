@@ -23,7 +23,7 @@ import phone2 from "../../public/images/phone2.webp";
 import Play from "../../public/images/googleplay.png";
 import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 import s1 from "../../public/images/Set-0.svg";
-
+import exp from "../../public/images/exploreimages.png";
 import s2 from "../../public/images/Set-1.svg";
 import s3 from "../../public/images/Set-2.svg";
 import { useState } from "react";
@@ -270,8 +270,9 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
         >
           <div className=" sm:w-[35%] relative w-screen min-h-[100vw] sm:min-h-0 flex justify-center items-end  mx-auto  xl:ml-0">
             <Image
-              src={phone2}
-              className="xl:pl-[10vh] absolute max-h-full w-auto object-contain sm:pl-[2vh] align-self-end"
+              src={exp}
+              // className="xl:pl-[10vh] absolute max-h-full w-auto object-contain sm:pl-[2vh] align-self-end"
+              className=" lg:w-full lg:p-5 sm:w-[75%] w-[90%] object-contain mb-10"
               alt="Home Background"
             />
           </div>
@@ -288,8 +289,8 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
               the app - your next adventure awaits!
             </p>
             <p className=" text-justify  sm:text-[1.8vw] xl:text-[1.5vw] lg:my-3 font-light text-white py-1  px-2 xl:p-2">
-              Ready for the big reveal? Leave your email and be the first to
-              know when our app hits the scene!
+              Join the journey. Be part of our journey. Download the Yoliday app
+              now and start exploring in the Alpha release!
             </p>
             {/* <Image
               src={Play}
@@ -335,7 +336,7 @@ const Popular: React.FC<PopularProps> = ({ onButtonClick }) => {
                       <Loader2 className="animate-spin ml-2" />
                     </>
                   ) : (
-                    <p>Get Notified</p>
+                    <p>Join Alpha</p>
                   )}
                 </button>
               </div>
