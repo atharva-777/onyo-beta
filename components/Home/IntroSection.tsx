@@ -182,7 +182,7 @@ export default function IntroSection() {
                     </button>
                   </div>
                 </form>
-                <div className="mb-5 mt-3 sm:mt-0 text-justify text-[3.5vw] ml-3 sm:text-[1.8vw] xl:text-[1.1vw]   font-light text-white  xl:p-2">
+                <div className="mb-5 mt-3 sm:mt-0 text-justify text-[3.5vw] ml-3 sm:text-[1.8vw] xl:text-[1.1vw]   font-light text-black  xl:p-2">
                   <p
                     className={`min-h-[4vw] sm:min-h-[1.8vw] ${
                       succmsg.startsWith("*") ? "text-red-600 font-normal" : ""
