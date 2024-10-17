@@ -6,7 +6,7 @@ function AppStoreButton() {
   return (
     <div className="mt-4 flex gap-6">
       <button className="flex gap-2 rounded-md px-2 py-1 shadow-lg">
-        <img className="h-8 object-cover" src={googlePlayIcon.src}></img>
+        <img className="h-8 object-cover" src={googlePlayIcon.src} alt="Google Play"></img>
 
         <div className="flex flex-col items-start">
           <span className="text-xs">Get it on</span>
@@ -14,7 +14,7 @@ function AppStoreButton() {
         </div>
       </button>
       <button className="flex gap-2 rounded-md px-2 py-1 shadow-lg">
-        <img className="h-8 object-cover" src={appStoreIcon.src}></img>
+        <img className="h-8 object-cover" src={appStoreIcon.src} alt="App Store"></img>
         <div className="flex flex-col items-start">
           <span className="text-xs">Get it on</span>
           App store

@@ -18,7 +18,7 @@ function Footer() {
         <div className="flex items-end justify-center gap-2">
           <img className="h-8 object-cover" src={yolidayLogoWhite.src}></img>
           <span className="text-sm font-bold">
-            Don't just dream it, Yoliday-it!
+            Don&apos;t just dream it, Yoliday-it!
           </span>
         </div>
         <div className="text-xs">&copy; {currYear} All Rights Reserved</div>
@@ -30,9 +30,9 @@ function Footer() {
         </div>
 
         <div className="flex flex-col items-end justify-end gap-2">
-          <img className="h-8 object-cover" src={yolidayLogoWhite.src}></img>
+          <img className="h-8 object-cover" src={yolidayLogoWhite.src} alt=""></img>
           <span className="text-right text-sm font-bold">
-            Don't just dream it, Yoliday-it!
+            Don&apos;t just dream it, Yoliday-it!
           </span>
         </div>
       </footer>

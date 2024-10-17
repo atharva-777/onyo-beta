@@ -81,6 +81,7 @@ function HowItWorks() {
         <img
           className="mt-5 h-[500px] object-cover lg:mt-0"
           src={chatAppScreen.src}
+          alt=""
         ></img>
       </div>
       <Link href={"/beta-signup"}>

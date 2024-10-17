@@ -4,7 +4,7 @@ import { signupForBeta } from "../actions/actions";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-function page() {
+function Page() {
   const router = useRouter();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -69,4 +69,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

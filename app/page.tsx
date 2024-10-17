@@ -89,10 +89,12 @@ export default function Home() {
           <img
             className="absolute left-0 top-0 -z-20 hidden h-full w-full rounded-3xl object-cover hover:cursor-pointer lg:block lg:h-full"
             src={footerBgImage.src}
+            alt=""
           />
           <img
             className="absolute left-0 top-0 -z-20 block h-full w-full rounded-3xl object-cover hover:cursor-pointer lg:hidden lg:h-full"
             src={mobileFooterImg.src}
+            alt=""
           />
 
           <div className="mx-5 mb-10 flex max-w-64 flex-col items-start justify-center md:max-w-96 lg:mx-10 lg:max-w-[500px]">

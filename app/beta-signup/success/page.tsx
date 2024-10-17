@@ -14,7 +14,7 @@ function page() {
         Your email is verified
       </h1>
       <p className="mb-4 text-sm">
-        Welcome to Yoliday Beta Testing. You're all set to join our early
+        Welcome to Yoliday Beta Testing. You&apos;re all set to join our early
         access. Your Adventure Starts Here!
       </p>
       <p className="mb-4 text-sm">

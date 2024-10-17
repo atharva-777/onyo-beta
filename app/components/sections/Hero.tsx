@@ -21,7 +21,7 @@ function Hero() {
           Unfrogettable Experiences
         </h1>
         <p className="mb-5 mt-2 text-start text-sm font-normal md:text-xl lg:mb-20">
-          Whether you're a foodie, a mountaineer, or a beach lover,{" "}
+          Whether you&apos;re a foodie, a mountaineer, or a beach lover,{" "}
           <br className="hidden md:block" />
           Yoliday connects you with like-minded adventurers.
         </p>
