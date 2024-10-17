@@ -9,8 +9,11 @@ function page() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     setLoading(true);
+    const formData = new FormData(event.currentTarget);
+
     const result: { success: boolean; message: string } =
       await signupForBeta(formData);
 
@@ -27,7 +30,7 @@ function page() {
         Enter your play store email ID
       </h1>
       <form
-        action={handleSubmit}
+        onSubmit={handleSubmit}
         className="flex min-w-full flex-col items-center gap-4"
       >
         <div className="flex min-w-96 flex-col">
