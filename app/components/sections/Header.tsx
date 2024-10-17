@@ -8,12 +8,12 @@ function Header() {
 
       <div className="flex items-center justify-center gap-8 text-white">
         <div>
-          <a className="underline underline-offset-2" href="#_">
+          <a className="underline underline-offset-2" href="#hero">
             Home
           </a>{" "}
         </div>
         <div>
-          <a className="underline underline-offset-2" href="#_">
+          <a className="underline underline-offset-2" href="#intro-video">
             About
           </a>{" "}
         </div>

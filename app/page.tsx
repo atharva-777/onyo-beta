@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </section>
       <HowItWorks />
-      <section className="mt-28">
+      <section className="mt-28" id="intro-video">
         <div className="mx-5 h-96 rounded-2xl md:mx-10 lg:mx-56 lg:h-[500px]">
           <video
             className="h-full w-full rounded-3xl object-cover"

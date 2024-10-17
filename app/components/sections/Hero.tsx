@@ -3,7 +3,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="max-w-screen relative h-80 md:h-screen">
+    <div className="max-w-screen relative h-80 md:h-screen" id="hero">
       <div className="absolute inset-0 z-0">
         <video
           className="h-80 w-screen object-cover md:h-screen"
