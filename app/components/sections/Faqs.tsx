@@ -48,12 +48,21 @@ function Faqs() {
       <h2 className="mb-10 text-left text-2xl font-medium text-black text-opacity-80">
         Frequently Asked Questions
       </h2>
-      <div className="flex max-w-[500px] flex-col items-start gap-8 text-black text-opacity-80">
+      <div className="flex w-full max-w-[1250px] flex-col items-start gap-8 text-black text-opacity-80">
         {faqs.map((faq, i) => (
-          <Accordion key={i} type="single" className="" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>{faq.Question}</AccordionTrigger>
-              <AccordionContent>{faq.Answer}</AccordionContent>
+          <Accordion
+            key={i}
+            type="single"
+            className="w-full rounded-lg shadow-md"
+            collapsible
+          >
+            <AccordionItem value={`item-${i}`} className="w-full">
+              <AccordionTrigger className="flex w-full items-center justify-between p-4 text-left">
+                {faq.Question}
+              </AccordionTrigger>
+              <AccordionContent className="border-t border-gray-300 p-4">
+                {faq.Answer}
+              </AccordionContent>
             </AccordionItem>
           </Accordion>
         ))}

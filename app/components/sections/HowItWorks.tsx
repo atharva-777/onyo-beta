@@ -8,7 +8,7 @@ import Link from "next/link";
 function HowItWorks() {
   return (
     <section className="mx-5 mt-8 flex flex-col items-center md:mt-10 lg:mt-20">
-      <h2 className="text-2xl font-medium text-black text-opacity-80">
+      <h2 className="text-3xl font-medium text-gray-800 text-opacity-80">
         How it works
       </h2>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">

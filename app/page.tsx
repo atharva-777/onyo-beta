@@ -6,6 +6,7 @@ import HowItWorks from "./components/sections/HowItWorks";
 import Experiences from "./components/sections/Experiences";
 import Header from "./components/sections/Header";
 import Hero from "./components/sections/Hero";
+import Image from "next/image";
 
 {
   /** Import images */
@@ -17,6 +18,7 @@ import experienceImage3 from "./assets/images/experiences-3.jpg";
 import footerBgImage from "./assets/images/desktop-footer-bg.png";
 import mobileFooterImg from "./assets/images/mobile-footer-bg.png";
 import Link from "next/link";
+import { px } from "framer-motion";
 
 export default function Home() {
   return (
@@ -32,19 +34,21 @@ export default function Home() {
           </div>
         </div>
         <div className="circle-bg">
-          <img
-            className="h-[500px] object-cover"
+          <Image
             src={AppScreenShot.src}
             alt="Sample img"
-          ></img>
+            className="h-[500px] object-cover"
+            width={250}
+            height={500}
+          />
         </div>
       </section>
       <Experiences />
       <section className="mx-5 mt-20 md:mx-10 lg:mx-20">
         <div className="mb-5 flex flex-col justify-between lg:flex-row lg:items-center">
-          <h2 className="text-2xl font-medium text-black text-opacity-80">
+          <p className="text-4xl text-gray-700 text-opacity-80">
             A unique blend of experiences
-          </h2>
+          </p>
           <p className="text-sm lg:w-96 lg:text-right">
             Discover a fusion of adventure. culture. and scenic beauty across
             our diverse places. offering unforgettable & untapped experiences at
@@ -73,6 +77,35 @@ export default function Home() {
       </section>
       <HowItWorks />
       <section className="mt-28" id="intro-video">
+        <div className="relative mx-5 h-96 rounded-2xl md:mx-10 lg:mx-56 lg:h-[500px]">
+          {/* Video Section */}
+          <video
+            className="h-full w-full rounded-3xl object-cover"
+            controls
+            muted
+          >
+            <source src="/videos/hero-section-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Text Above the Square */}
+          <div className="absolute left-0 right-0 top-8 z-10 flex flex-col items-center">
+            <h2 className="text-xl font-bold text-white md:text-2xl lg:text-3xl">
+              Yoliday Adventures Unveiled
+            </h2>
+            <p className="lg:text-md mt-2 text-sm text-white md:text-lg">
+              Sail through the voyage of shared experience
+            </p>
+          </div>
+
+          {/* White Border Square Overlay */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <div className="w-128 md:w-256 relative top-10 h-56 rounded-lg border-4 border-white md:h-64 lg:h-[300px] lg:w-[800px]"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="mt-28" id="intro-video">
         <div className="mx-5 h-96 rounded-2xl md:mx-10 lg:mx-56 lg:h-[500px]">
           <video
             className="h-full w-full rounded-3xl object-cover"
@@ -83,7 +116,7 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
-      </section>
+      </section> */}
       <section className="mx-5 mt-20 rounded-3xl md:mx-10 lg:mx-56">
         <div className="relative flex h-96 w-full flex-col justify-end lg:h-[500px]">
           <img

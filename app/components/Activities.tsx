@@ -51,7 +51,7 @@ function Activities() {
         return (
           <div
             key={index}
-            className="flex w-fit items-center justify-center gap-1 px-1 py-1 shadow-md"
+            className="flex w-fit items-center justify-center gap-1 rounded p-2 shadow-md"
           >
             <div className="flex size-4 items-center justify-center rounded-full bg-white">
               {activity.icon}
