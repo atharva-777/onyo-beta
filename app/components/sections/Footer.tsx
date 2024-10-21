@@ -7,6 +7,7 @@ import {
 } from "../Icons";
 import { Mail } from "lucide-react";
 import yolidayLogoWhite from "../../assets/icons/yoliday-white-logo.png";
+import Image from "next/image";
 
 const currYear = new Date().getFullYear();
 
@@ -30,7 +31,11 @@ function Footer() {
         </div>
 
         <div className="flex flex-col items-end justify-end gap-2">
-          <img className="h-8 object-cover" src={yolidayLogoWhite.src} alt=""></img>
+          <img
+            className="h-8 object-cover"
+            src={yolidayLogoWhite.src}
+            alt=""
+          ></img>
           <span className="text-right text-sm font-bold">
             Don&apos;t just dream it, Yoliday-it!
           </span>
@@ -50,7 +55,7 @@ function Socials() {
         target="_blank"
         className="flex size-6 items-center justify-center"
       >
-        <FacebookIcon />
+        <Image src="/images/fb.svg" alt="Facebook" width={24} height={24} />
       </a>
 
       <a
@@ -65,21 +70,21 @@ function Socials() {
         target="_blank"
         className="flex size-6 items-center justify-center"
       >
-        <InstagramIcon />
+        <Image src="/images/ig.svg" alt="Instagram" width={24} height={24} />
       </a>
       <a
         href="http://linkedin.com/company/yoliday-in"
         target="_blank"
         className="flex size-6 items-center justify-center"
       >
-        <LinkedinIcon />
+        <Image src="/images/in.svg" alt="Linkedin" width={24} height={24} />
       </a>
       <a
         href="https://www.youtube.com/channel/UCu52zXBWGDIrBaZgUuaAgHg"
         target="_blank"
         className="flex size-6 items-center justify-center"
       >
-        <YoutubeIcon />
+        <Image src="/images/youtube.svg" alt="Youtube" width={24} height={24} />
       </a>
     </div>
   );

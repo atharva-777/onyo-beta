@@ -28,14 +28,14 @@ export default function Home() {
       <section className="mt-40 flex flex-col-reverse items-center justify-center gap-10 md:flex-row md:gap-40 lg:gap-56">
         <div className="flex flex-col items-center gap-3">
           <Activities />
-          <div className="text-gray-500">And much more</div>
+          <div className="text-sm text-gray-500">And much more</div>
           <div>
             <AppStoreButton />
           </div>
         </div>
         <div className="circle-bg">
           <Image
-            src={AppScreenShot.src}
+            src={AppScreenShot}
             alt="Sample img"
             className="h-[500px] object-cover"
             width={250}
@@ -46,7 +46,7 @@ export default function Home() {
       <Experiences />
       <section className="mx-5 mt-20 md:mx-10 lg:mx-20">
         <div className="mb-5 flex flex-col justify-between lg:flex-row lg:items-center">
-          <p className="text-4xl text-gray-700 text-opacity-80">
+          <p className="mb-2 text-4xl text-gray-700 lg:mb-0">
             A unique blend of experiences
           </p>
           <p className="text-sm lg:w-96 lg:text-right">
@@ -77,7 +77,7 @@ export default function Home() {
       </section>
 
       <HowItWorks />
-      <IntroVideoBottom/>
+      <IntroVideoBottom />
 
       <section className="mx-5 mt-20 rounded-3xl md:mx-10 lg:mx-56">
         <div className="relative flex h-96 w-full flex-col justify-end lg:h-[500px]">

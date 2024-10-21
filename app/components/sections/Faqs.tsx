@@ -44,7 +44,7 @@ const faqs: Faq[] = [
 ];
 function Faqs() {
   return (
-    <section className="mb-20 px-5 lg:px-0 mt-20 flex flex-col items-center justify-center">
+    <section className="mb-20 mt-20 flex flex-col items-center justify-center px-5 lg:px-0">
       <h2 className="mb-10 text-left text-2xl font-medium text-black text-opacity-80">
         Frequently Asked Questions
       </h2>

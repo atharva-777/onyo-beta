@@ -7,7 +7,7 @@ export async function signupForBeta(
   if (!email) {
     return {
       success: false,
-      message: "Email is required.",
+      message: "Email ID is required.",
     };
   }
 
@@ -24,7 +24,7 @@ export async function signupForBeta(
       console.log(response);
       return {
         success: false,
-        message: "Something went wrong. Please try again!",
+        message: "Enter valid Email ID.",
       };
     }
 
@@ -33,7 +33,7 @@ export async function signupForBeta(
     console.log(error);
     return {
       success: false,
-      message: "Something went wrong. Please try again!",
+      message: "Enter valid Email ID.",
     };
   }
 }
