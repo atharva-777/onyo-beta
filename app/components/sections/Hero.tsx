@@ -18,7 +18,7 @@ function Hero() {
       <div className="relative z-10 flex h-80 flex-col items-start justify-center bg-black bg-opacity-50 px-8 pt-14 text-white md:h-screen md:pl-10 lg:pl-24">
         <h1 className="text-left text-xl font-medium md:text-5xl md:font-medium">
           Discover, Create, and Share <br className="hidden md:block" />
-          Unfrogettable Experiences
+          Unforgettable Experiences
         </h1>
         <p className="mb-5 mt-2 text-start text-sm font-normal md:text-xl lg:mb-20">
           Whether you&apos;re a foodie, a mountaineer, or a beach lover,{" "}
