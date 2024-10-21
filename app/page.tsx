@@ -18,7 +18,7 @@ import experienceImage3 from "./assets/images/experiences-3.jpg";
 import footerBgImage from "./assets/images/desktop-footer-bg.png";
 import mobileFooterImg from "./assets/images/mobile-footer-bg.png";
 import Link from "next/link";
-import { px } from "framer-motion";
+import IntroVideoBottom from "./components/sections/IntroVideoBottom";
 
 export default function Home() {
   return (
@@ -75,48 +75,10 @@ export default function Home() {
           />
         </div>
       </section>
+
       <HowItWorks />
-      <section className="mt-28" id="intro-video">
-        <div className="relative mx-5 h-96 rounded-2xl md:mx-10 lg:mx-56 lg:h-[500px]">
-          {/* Video Section */}
-          <video
-            className="h-full w-full rounded-3xl object-cover"
-            controls
-            muted
-          >
-            <source src="/videos/hero-section-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <IntroVideoBottom/>
 
-          {/* Text Above the Square */}
-          <div className="absolute left-0 right-0 top-8 z-10 flex flex-col items-center">
-            <h2 className="text-xl font-bold text-white md:text-2xl lg:text-3xl">
-              Yoliday Adventures Unveiled
-            </h2>
-            <p className="lg:text-md mt-2 text-sm text-white md:text-lg">
-              Sail through the voyage of shared experience
-            </p>
-          </div>
-
-          {/* White Border Square Overlay */}
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <div className="w-128 md:w-256 relative top-10 h-56 rounded-lg border-4 border-white md:h-64 lg:h-[300px] lg:w-[800px]"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* <section className="mt-28" id="intro-video">
-        <div className="mx-5 h-96 rounded-2xl md:mx-10 lg:mx-56 lg:h-[500px]">
-          <video
-            className="h-full w-full rounded-3xl object-cover"
-            controls
-            muted
-          >
-            <source src="/videos/hero-section-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </section> */}
       <section className="mx-5 mt-20 rounded-3xl md:mx-10 lg:mx-56">
         <div className="relative flex h-96 w-full flex-col justify-end lg:h-[500px]">
           <img
