@@ -1,54 +1,57 @@
+"use client"
 import React from "react";
 import Card from "../Card";
 import type { CardProps } from "../Card";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const trips: CardProps[] = [
   {
     title: "Sunset Cruise in Kerala",
-    price: 5000,
-    days: 3,
+    price: 8000,
+    days: 2,
     location: "Kerala",
     image: "/images/sunset-image.jpg",
   },
   {
     title: "Desert Safari in Rajasthan",
-    price: 5000,
-    days: 3,
-    location: "Rajasthan",
+    price: 6000,
+    days: 1,
+    location: "Jaisalmer",
     image: "/images/desert-image.jpg",
   },
   {
     title: "Hot Air Balloon Ride in Jaipur",
-    price: 5000,
-    days: 3,
+    price: 4000,
+    days: 1,
     location: "Jaipur",
     image: "/images/balloon.jpg",
   },
   {
-    title: "Paragliding in Manali",
-    price: 5000,
-    days: 3,
-    location: "Manali",
+    title: "Paragliding",
+    price: 6000,
+    days: 2,
+    location: "Bir",
     image: "/images/paragliding.jpg",
   },
   {
     title: "Wine tasting in Nashik",
-    price: 5000,
-    days: 3,
+    price: 4000,
+    days: 1,
     location: "Nashik",
     image: "/images/wine.jpg",
   },
   {
     title: "Houseboat Stay in Alleppey",
-    price: 5000,
-    days: 3,
+    price: 10000,
+    days: 2,
     location: "Alleppey",
     image: "/images/houseboat.jpg",
   },
   {
     title: "River Rafting in Rishikesh",
-    price: 5000,
-    days: 3,
+    price: 1000,
+    days: 1,
     location: "Rishikesh",
     image: "/images/river.jpg",
   },
@@ -57,49 +60,49 @@ const trips: CardProps[] = [
 const trips2: CardProps[] = [
   {
     title: "Beach Yoga in South Goa",
-    price: 5000,
-    days: 3,
+    price: 3000,
+    days: 1,
     location: "Goa",
     image: "/images/beach-yoga.jpg",
   },
   {
-    title: "Traditional Bengali Cooking",
-    price: 5000,
-    days: 3,
-    location: "Bengal",
+    title: "Bengali Cooking Class",
+    price: 2500,
+    days: 1,
+    location: "Delhi",
     image: "/images/bengali-cooking.jpg",
   },
   {
     title: "Guided Village Walk",
-    price: 5000,
-    days: 3,
-    location: "Assam",
+    price: 4000,
+    days: 2,
+    location: "Rajasthan",
     image: "/images/guided-village.jpg",
   },
   {
     title: "Spice Plantation Tour",
-    price: 5000,
-    days: 3,
-    location: "Goa",
+    price: 2000,
+    days: 1,
+    location: "Coorg",
     image: "/images/spice-plant.jpg",
   },
   {
     title: "Weaving Workshop",
     price: 5000,
-    days: 3,
-    location: "Kashmir",
+    days: 1,
+    location: "Ladakh",
     image: "/images/weaving.jpg",
   },
   {
     title: "Fishing with Local Fisherman",
-    price: 5000,
-    days: 3,
-    location: "Kerala",
+    price: 3000,
+    days: 1,
+    location: "Goa",
     image: "/images/fishing.jpg",
   },
   {
     title: "Cultural Tour of Varanasi",
-    price: 5000,
+    price: 8000,
     days: 3,
     location: "Varanasi",
     image: "/images/culture-varanasi.jpg",
@@ -107,17 +110,30 @@ const trips2: CardProps[] = [
 ];
 function Experiences() {
   return (
-    <section className="mx-5 mt-20 flex flex-col gap-5 md:gap-10">
-      <div className="scrollbar-hidden grid grid-flow-col gap-8 overflow-x-auto py-8">
-        {trips.map((trip, i) => {
-          return <Card {...trip} key={i} />;
-        })}
-      </div>
-      <div className="scrollbar-hidden grid grid-flow-col gap-8 overflow-x-auto py-8">
-        {trips2.map((trip, i) => {
-          return <Card {...trip} key={i} />;
-        })}
-      </div>
+    <section className="md:mx-8 mx-4 lg:mx-16 px-4 mt-20 flex flex-col gap-5 md:gap-10">
+      <Carousel className="" plugins={[ Autoplay({delay:2000})]} opts={{align: "start"}}>
+        <CarouselContent className=" py-6 -ml-1">
+        {trips.map((trip, i) => (
+          <CarouselItem key={i} className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5">
+            <Card {...trip} />
+          </CarouselItem>
+        )
+           
+        )}
+      </CarouselContent>
+      </Carousel>
+      
+      <Carousel className="" plugins={[ Autoplay({delay:2000})]} opts={{align: "start"}}>
+        <CarouselContent className=" py-6 -ml-1">
+        {trips2.map((trip, i) => (
+          <CarouselItem key={i} className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5">
+            <Card {...trip} />
+          </CarouselItem>
+        )
+           
+        )}
+      </CarouselContent>
+      </Carousel>
     </section>
   );
 }
