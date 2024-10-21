@@ -2,7 +2,7 @@
 import React from "react";
 import Card from "../Card";
 import type { CardProps } from "../Card";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const trips: CardProps[] = [
@@ -110,8 +110,8 @@ const trips2: CardProps[] = [
 ];
 function Experiences() {
   return (
-    <section className="md:mx-8 mx-4 lg:mx-16 px-4 mt-20 flex flex-col gap-5 md:gap-10">
-      <Carousel className="" plugins={[ Autoplay({delay:2000})]} opts={{align: "start"}}>
+    <section className=" mx-10 lg:mx-16 px-4 mt-20 flex flex-col gap-5 md:gap-10">
+      <Carousel className="" opts={{align: "start"}}>
         <CarouselContent className=" py-6 -ml-1">
         {trips.map((trip, i) => (
           <CarouselItem key={i} className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5">
@@ -121,9 +121,11 @@ function Experiences() {
            
         )}
       </CarouselContent>
+      <CarouselPrevious/>
+      <CarouselNext/>
       </Carousel>
       
-      <Carousel className="" plugins={[ Autoplay({delay:2000})]} opts={{align: "start"}}>
+      <Carousel className="" opts={{align: "start"}}>
         <CarouselContent className=" py-6 -ml-1">
         {trips2.map((trip, i) => (
           <CarouselItem key={i} className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5">
@@ -133,6 +135,8 @@ function Experiences() {
            
         )}
       </CarouselContent>
+      <CarouselPrevious/>
+      <CarouselNext/>
       </Carousel>
     </section>
   );
