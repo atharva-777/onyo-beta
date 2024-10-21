@@ -1,8 +1,14 @@
-"use client"
+"use client";
 import React from "react";
 import Card from "../Card";
 import type { CardProps } from "../Card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const trips: CardProps[] = [
@@ -110,33 +116,35 @@ const trips2: CardProps[] = [
 ];
 function Experiences() {
   return (
-    <section className=" mx-10 lg:mx-16 px-4 mt-20 flex flex-col gap-5 md:gap-10">
-      <Carousel className="" opts={{align: "start"}}>
-        <CarouselContent className=" py-6 -ml-1">
-        {trips.map((trip, i) => (
-          <CarouselItem key={i} className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5">
-            <Card {...trip} />
-          </CarouselItem>
-        )
-           
-        )}
-      </CarouselContent>
-      <CarouselPrevious/>
-      <CarouselNext/>
+    <section className="mx-10 mt-20 flex flex-col gap-5 px-4 md:gap-10 lg:mx-16">
+      <Carousel className="" opts={{ align: "start" }}>
+        <CarouselContent className="-ml-1 py-6">
+          {trips.map((trip, i) => (
+            <CarouselItem
+              key={i}
+              className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5"
+            >
+              <Card {...trip} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
-      
-      <Carousel className="" opts={{align: "start"}}>
-        <CarouselContent className=" py-6 -ml-1">
-        {trips2.map((trip, i) => (
-          <CarouselItem key={i} className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5">
-            <Card {...trip} />
-          </CarouselItem>
-        )
-           
-        )}
-      </CarouselContent>
-      <CarouselPrevious/>
-      <CarouselNext/>
+
+      <Carousel className="" opts={{ align: "start" }}>
+        <CarouselContent className="-ml-1 py-6">
+          {trips2.map((trip, i) => (
+            <CarouselItem
+              key={i}
+              className="px-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/5"
+            >
+              <Card {...trip} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </section>
   );
