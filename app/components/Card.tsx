@@ -4,11 +4,11 @@ import { DotIcon } from "./Icons";
 export type CardProps = {
   title: string;
   price: number;
-  days: number;
+  duration: string;
   location: string;
   image: string;
 };
-function Card({ title, price, days, location, image }: CardProps) {
+function Card({ title, price, duration, location, image }: CardProps) {
   return (
     <div className="flex h-72 min-w-52 flex-col rounded-2xl bg-[#f7f7ff] shadow-lg">
       <div className="h-48">
@@ -26,7 +26,7 @@ function Card({ title, price, days, location, image }: CardProps) {
         <p className="flex items-center justify-around gap-1 px-2 pb-2 pt-1 text-sm">
           <span>₹{price}</span>
           <DotIcon />
-          <span>{days} days</span>
+          <span>{duration}</span>
           <DotIcon />
           <span>{location}</span>
         </p>

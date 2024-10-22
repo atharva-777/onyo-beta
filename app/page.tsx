@@ -15,8 +15,9 @@ import AppScreenShot from "./assets/images/yoliday app home screen.png";
 import experienceImage1 from "./assets/images/exp-2.png";
 import experienceImage2 from "./assets/images/exp-1.png";
 import experienceImage3 from "./assets/images/exp-full.png";
-import footerBgImage from "./assets/images/desktop-footer-bg.png";
-import mobileFooterImg from "./assets/images/mobile-footer-bg.png";
+import footerBgImage from "./assets/images/Desktop.png";
+import mobileFooterImg from "./assets/images/Phone.png";
+import tabletFooterImg from "./assets/images/Tablet.png";
 import Link from "next/link";
 import IntroVideoBottom from "./components/sections/IntroVideoBottom";
 
@@ -29,9 +30,9 @@ export default function Home() {
         <div className="flex w-full flex-col items-center gap-3 md:w-1/2">
           <Activities />
           <div className="text-sm text-gray-500">And much more</div>
-          <div>
+          {/* <div>
             <AppStoreButton />
-          </div>
+          </div> */}
         </div>
         <div className="circle-bg">
           <Image
@@ -82,16 +83,11 @@ export default function Home() {
       <section className="mx-5 mt-20 rounded-3xl md:mx-10 lg:mx-56">
         <div className="relative flex h-96 w-full flex-col justify-end lg:h-[500px]">
           <img
-            className="absolute left-0 top-0 -z-20 hidden h-full w-full rounded-3xl object-cover hover:cursor-pointer lg:block lg:h-full"
+            className="absolute left-0 top-0 -z-20  h-full w-full rounded-3xl object-cover hover:cursor-pointer block lg:h-full"
             src={footerBgImage.src}
             alt=""
           />
-          <img
-            className="absolute left-0 top-0 -z-20 block h-full w-full rounded-3xl object-cover hover:cursor-pointer lg:hidden lg:h-full"
-            src={mobileFooterImg.src}
-            alt=""
-          />
-
+          
           <div className="mx-5 mb-10 flex max-w-64 flex-col items-start justify-center md:max-w-96 lg:mx-10 lg:max-w-[500px]">
             <div className="w-full text-2xl text-white lg:text-4xl">
               Team up with like-minded adventurers, join their Experience, or
@@ -104,9 +100,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="mt-10 flex items-center justify-center">
+        {/* <div className="mt-10 flex items-center justify-center">
           <AppStoreButton />
-        </div>
+        </div> */}
       </section>
 
       <Faqs />

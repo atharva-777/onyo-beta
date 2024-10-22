@@ -13,7 +13,7 @@ function AppStoreButton() {
         ></img>
 
         <div className="flex flex-col items-start">
-          <span className="text-xs">Get it on</span>
+          <span className="text-[10px]">Get it on</span>
           Google Play
         </div>
       </button>
@@ -24,7 +24,7 @@ function AppStoreButton() {
           alt="App Store"
         ></img>
         <div className="flex flex-col items-start">
-          <span className="text-xs">Get it on</span>
+          <span className="text-[10px]">Download on the</span>
           App store
         </div>
       </button>

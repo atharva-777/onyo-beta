@@ -35,7 +35,7 @@ function Hero() {
             <button className="mx-3 size-6 rounded-full border-2 border-gray-400 font-mono text-xs text-gray-400">
               i
             </button>
-            <p className="absolute bottom-10 hidden w-40 rounded-lg bg-black bg-opacity-50 px-2 py-1 text-[8px] font-light text-white group-hover:block md:text-xs lg:w-56">
+            <p className="absolute -bottom-3 left-11 lg:left-0 lg:bottom-10 hidden w-40 md:w-52 rounded-lg bg-black bg-opacity-50 px-2 py-1 text-[8px] font-light text-white group-hover:block md:text-xs lg:w-56">
               Be one of the first to try our app and help us make it better by
               sharing your feedback!
             </p>
