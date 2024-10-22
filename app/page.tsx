@@ -25,8 +25,8 @@ export default function Home() {
     <div className="overflow-hidden">
       <Header />
       <Hero />
-      <section className="mt-40 flex flex-col-reverse items-center justify-center gap-10 md:flex-row md:gap-40 lg:gap-56">
-        <div className="flex flex-col items-center gap-3">
+      <section className="mx-5 mt-40 flex flex-col-reverse items-center justify-center gap-10 md:mx-10 md:flex-row md:gap-20 lg:mx-20 lg:gap-40">
+        <div className="flex w-full flex-col items-center gap-3 md:w-1/2">
           <Activities />
           <div className="text-sm text-gray-500">And much more</div>
           <div>
