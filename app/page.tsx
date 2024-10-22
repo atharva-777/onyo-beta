@@ -50,8 +50,8 @@ export default function Home() {
             A unique blend of experiences
           </p>
           <p className="text-sm lg:w-96 lg:text-right">
-            Discover a fusion of adventure. culture. and scenic beauty across
-            our diverse places. offering unforgettable & untapped experiences at
+            Discover a fusion of adventure, culture, and scenic beauty across
+            our diverse places, offering unforgettable & untapped experiences at
             every turn.
           </p>
         </div>

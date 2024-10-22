@@ -9,18 +9,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const trips: CardProps[] = [
   {
-    title: "Sunset Cruise in Kerala",
+    title: "Sunset Cruise in Cohin",
     price: 8000,
     days: 2,
-    location: "Kerala",
+    location: "Cohin",
     image: "/images/sunset-image.jpg",
   },
   {
-    title: "Desert Safari in Rajasthan",
+    title: "Desert Safari in Jaisalmer",
     price: 6000,
     days: 1,
     location: "Jaisalmer",
@@ -34,7 +33,7 @@ const trips: CardProps[] = [
     image: "/images/balloon.jpg",
   },
   {
-    title: "Paragliding",
+    title: "Paragliding in Bir",
     price: 6000,
     days: 2,
     location: "Bir",
