@@ -22,7 +22,7 @@ const IntroVideoBottom = () => {
           controls
           onPlay={handlePlay}
           onPause={handlePause}
-          onEnded={handlePause} // Optional: Handle video end to show text again
+          onEnded={handlePause}
         >
           <source src="/videos/hero-section-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.

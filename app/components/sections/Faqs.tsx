@@ -13,12 +13,12 @@ type Faq = {
 const faqs: Faq[] = [
   {
     Answer:
-      "Yoliday is a platform designed for travel enthusiasts to join unique experiences curated by experts and to create their own travel experiences, allowing others to join in on the adventure. Users can design personalized itineraries, share their unique insights, and invite fellow explorers to participate. This feature fosters a collaborative travel community where members can discover new experiences, connect with others, and make lasting memories together. Whether you’re looking for hidden gems, authentic local dishes, or winding streets off the beaten path, Yoliday helps you dive deeper into your travels. Connecting with like-minded adventurers can create lasting memories and build friendships while exploring together.",
+      "Yoliday is a platform designed for adventure enthusiasts to join unique experiences curated by experts and to create their own experiences, allowing others to join in on the adventure. Users can design personalized itineraries, share their unique insights, and invite fellow explorers to participate. This feature fosters a collaborative community where members can discover new experiences, connect with others, and make lasting memories together. Whether you’re looking for hidden gems, authentic local dishes, or winding streets off the beaten path, Yoliday helps you dive deeper into your adventures and explorations. Connecting with like-minded adventurers can create lasting memories and build friendships while exploring together.",
     Question: "What is Yoliday and how does it work?",
   },
   {
     Answer:
-      "Yoliday allows you to connect with other travelers by enabling you to join their experiences and vice versa. When you participate in a Yoliday-created experience, you'll have the opportunity to meet new people you may not have encountered before.",
+    "Yoliday allows you to connect with other adventure lovers by enabling you to join their experiences and vice versa. When you participate in a Yoliday-created experience, you'll have the opportunity to meet new people you may not have encountered before.",
     Question: "How do I connect with other travelers?",
   },
   {
