@@ -12,9 +12,9 @@ import Image from "next/image";
   /** Import images */
 }
 import AppScreenShot from "./assets/images/yoliday app home screen.png";
-import experienceImage1 from "./assets/images/experiences-1.jpg";
-import experienceImage2 from "./assets/images/experiences-2.jpg";
-import experienceImage3 from "./assets/images/experiences-3.jpg";
+import experienceImage1 from "./assets/images/exp-2.png";
+import experienceImage2 from "./assets/images/exp-1.png";
+import experienceImage3 from "./assets/images/exp-full.png";
 import footerBgImage from "./assets/images/desktop-footer-bg.png";
 import mobileFooterImg from "./assets/images/mobile-footer-bg.png";
 import Link from "next/link";
