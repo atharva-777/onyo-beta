@@ -32,7 +32,7 @@ function Hero() {
             </button>
           </Link>
           <div className="group relative">
-            <button className="mx-3 size-8 rounded-full border-2 border-gray-400 font-mono text-gray-400">
+            <button className="mx-3 size-6 rounded-full border-2 border-gray-400 font-mono text-xs text-gray-400">
               i
             </button>
             <p className="absolute bottom-10 hidden w-40 rounded-lg bg-black bg-opacity-50 px-2 py-1 text-[8px] font-light text-white group-hover:block md:text-xs lg:w-56">

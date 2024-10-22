@@ -1,52 +1,67 @@
-import {
-  CampingIcon,
-  CookingIcon,
-  FootTasingIcon,
-  GuidedTourIcon,
-  HikingIcon,
-  MusicIcon,
-  PhotographyIcon,
-  YogaIcon,
-} from "./Icons";
+import Image from "next/image";
 
 const activities = [
   {
-    title: "Hiking",
-    icon: <HikingIcon />,
+    title: "Adventure Buffs",
+    icon: "/icons/buffs.png",
   },
   {
-    title: "Guided Tours",
-    icon: <GuidedTourIcon />,
+    title: "Photography Expedition",
+    icon: "/icons/photgraphy.png",
+  },
+  {
+    title: "City Walks",
+    icon: "/icons/city walks.png",
+  },
+  {
+    title: "Beach Bliss",
+    icon: "/icons/beach.png",
   },
   {
     title: "Camping",
-    icon: <CampingIcon />,
+    icon: "/icons/camping.png",
   },
   {
-    title: "Food Tasting",
-    icon: <FootTasingIcon />,
+    title: "Heritage Tours",
+    icon: "/icons/heritage.png",
   },
   {
-    title: "Yoga Retreat",
-    icon: <YogaIcon />,
+    title: "Mountains Majesty",
+    icon: "/icons/mountains.png",
   },
   {
-    title: "Cooking",
-    icon: <CookingIcon />,
+    title: "Festive Fever",
+    icon: "/icons/festive.png",
   },
   {
-    title: "Photography tours",
-    icon: <PhotographyIcon />,
+    title: "Hidden Gems",
+    icon: "/icons/gems.png",
   },
   {
-    title: "Music festivals",
-    icon: <MusicIcon />,
+    title: "Trekking Tours",
+    icon: "/icons/trekking.png",
+  },
+  {
+    title: "Unique Stays",
+    icon: "/icons/stays.png",
+  },
+  {
+    title: "Sacred Journeys",
+    icon: "/icons/sacred.png",
+  },
+  {
+    title: "Culinary Quests",
+    icon: "/icons/culinary.png",
+  },
+  {
+    title: "Cultural Immersion",
+    icon: "/icons/cultural.png",
   },
 ];
 
 function Activities() {
   return (
-    <div className="flex w-80 flex-wrap items-center justify-center gap-x-1 gap-y-3 text-gray-500">
+    <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-3 text-gray-500">
       {activities.map((activity, index) => {
         return (
           <div
@@ -54,7 +69,7 @@ function Activities() {
             className="flex w-fit items-center justify-center gap-1 rounded p-2 shadow-md"
           >
             <div className="flex size-4 items-center justify-center rounded-full bg-white">
-              {activity.icon}
+              <Image src={activity.icon} width={16} height={16} alt="" />
             </div>
             <p className="text-sm font-normal text-gray-500">
               {activity.title}
