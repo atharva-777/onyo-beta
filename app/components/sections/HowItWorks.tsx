@@ -68,7 +68,7 @@ function HowItWorks() {
           </p>
         </div>
         <Image
-          className="mt-5 h-[500px] object-cover lg:mt-0"
+          className="mt-5 h-[520px] object-cover lg:mt-0"
           src={bookingAppScreen}
           width={250}
           height={500}
@@ -89,7 +89,7 @@ function HowItWorks() {
           </p>
         </div>
         <Image
-          className="mt-5 h-[500px] object-cover lg:mt-0"
+          className="mt-5 h-[520px] object-cover lg:mt-0"
           src={chatAppScreen}
           width={250}
           height={500}
