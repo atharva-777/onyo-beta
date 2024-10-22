@@ -68,14 +68,14 @@ const trips2: CardProps[] = [
     price: 3000,
     days: 1,
     location: "Goa",
-    image: "/images/beach-yoga.jpg",
+    image: "/images/beach-yoga.png",
   },
   {
     title: "Bengali Cooking Class",
     price: 2500,
     days: 1,
     location: "Delhi",
-    image: "/images/bengali-cooking.jpg",
+    image: "/images/bengali-cooking.png",
   },
   {
     title: "Guided Village Walk",
@@ -103,7 +103,7 @@ const trips2: CardProps[] = [
     price: 3000,
     days: 1,
     location: "Goa",
-    image: "/images/fishing.jpg",
+    image: "/images/fishing.png",
   },
   {
     title: "Cultural Tour of Varanasi",

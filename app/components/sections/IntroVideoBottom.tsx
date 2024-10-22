@@ -24,7 +24,7 @@ const IntroVideoBottom = () => {
           onPause={handlePause}
           onEnded={handlePause}
         >
-          <source src="/videos/hero-section-video.mp4" type="video/mp4" />
+          <source src="/videos/Yoliday Intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
