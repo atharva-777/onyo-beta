@@ -13,7 +13,7 @@ function HowItWorks() {
         How it works
       </h2>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
-        <div className="flex flex-col">
+        <div className="flex flex-col w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <SearchIcon />
@@ -25,16 +25,19 @@ function HowItWorks() {
             to adventure treks and food tastings.
           </p>
         </div>
-        <Image
-          className="mt-5 h-[500px] object-cover lg:mt-0"
-          src={AppScreenShot}
-          width={250}
-          height={500}
-          alt=""
-        ></Image>
+
+        <div className="pattern-1 w-72">
+          <Image
+            className="mt-5 h-[500px] w-full object-cover lg:mt-0"
+            src={AppScreenShot}
+            width={250}
+            height={500}
+            alt=""
+          ></Image>
+        </div>
       </div>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:mb-0 lg:gap-56">
-        <div className="flex flex-col">
+        <div className="flex flex-col w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <PenIcon />
@@ -46,16 +49,18 @@ function HowItWorks() {
             experience for others to join.
           </p>
         </div>
-        <Image
-          className="mt-5 h-[500px] object-cover lg:mt-0"
-          src={createExpAppScreen}
-          width={250}
-          height={500}
-          alt=""
-        ></Image>
+        <div className="pattern-2 w-72">
+          <Image
+            className="mt-5 h-[500px] object-cover lg:mt-0"
+            src={createExpAppScreen}
+            width={250}
+            height={500}
+            alt=""
+          ></Image>
+        </div>
       </div>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
-        <div className="flex flex-col">
+        <div className="flex flex-col w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <BookIcon />
@@ -67,16 +72,18 @@ function HowItWorks() {
             clicks.
           </p>
         </div>
-        <Image
-          className="mt-5 h-[520px] object-cover lg:mt-0"
-          src={bookingAppScreen}
-          width={250}
-          height={500}
-          alt=""
-        ></Image>
+        <div className="pattern-3 w-72">
+          <Image
+            className="mt-5 h-[520px] object-cover lg:mt-0"
+            src={bookingAppScreen}
+            width={250}
+            height={500}
+            alt=""
+          ></Image>
+        </div>
       </div>
       <div className="mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:gap-56">
-        <div className="flex flex-col">
+        <div className="flex flex-col w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <ChatIcon />
@@ -88,13 +95,15 @@ function HowItWorks() {
             your journey.
           </p>
         </div>
-        <Image
-          className="mt-5 h-[520px] object-cover lg:mt-0"
-          src={chatAppScreen}
-          width={250}
-          height={500}
-          alt=""
-        ></Image>
+        <div className="pattern-4 w-72">
+          <Image
+            className="mt-5 h-[520px] object-cover lg:mt-0"
+            src={chatAppScreen}
+            width={250}
+            height={500}
+            alt=""
+          ></Image>
+        </div>
       </div>
       <Link href={"/beta-signup"}>
         <button className="mt-20 rounded-full bg-gradient-linear px-8 py-4 font-medium text-white">

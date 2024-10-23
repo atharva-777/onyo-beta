@@ -13,7 +13,7 @@ import {
 const trips: CardProps[] = [
   {
     title: "Sunset Cruise in Cochin",
-    price: 8000,
+    price: 2000,
     duration: "5 hours",
     location: "Kerala",
     image: "/images/sunset-image.jpg",
@@ -34,28 +34,28 @@ const trips: CardProps[] = [
   },
   {
     title: "Paragliding in Bir",
-    price: 5000,
+    price: 3000,
     duration: "2 hours",
     location: "Himachal",
     image: "/images/paragliding.jpg",
   },
   {
     title: "Wine tasting in Nashik",
-    price: 4000,
+    price: 3000,
     duration: "2 hours",
     location: "Maharashtra",
     image: "/images/wine.jpg",
   },
   {
     title: "Houseboat Stay in Alleppey",
-    price: 10000,
+    price: 7000,
     duration: "1 day",
     location: "Kerala",
     image: "/images/houseboat.jpg",
   },
   {
     title: "River Rafting in Rishikesh",
-    price: 2000,
+    price: 1500,
     duration: "3 hours",
     location: "Uttarakhand",
     image: "/images/river.jpg",
@@ -65,14 +65,14 @@ const trips: CardProps[] = [
 const trips2: CardProps[] = [
   {
     title: "Beach Yoga in Palolem",
-    price: 3000,
+    price: 800,
     duration: "1 hour",
     location: "Goa",
     image: "/images/beach-yoga.png",
   },
   {
     title: "Bengali Cooking Class in Kolkata",
-    price: 2500,
+    price: 1000,
     duration: "2 hours",
     location: "West Bengal",
     image: "/images/bengali-cooking.png",
@@ -93,21 +93,21 @@ const trips2: CardProps[] = [
   },
   {
     title: "Weaving Workshop in Ladakh",
-    price: 4000,
+    price: 3000,
     duration: "2 hours",
     location: "Ladakh",
     image: "/images/weaving.jpg",
   },
   {
     title: "Fishing with Local Fisherman",
-    price: 3000,
+    price: 2000,
     duration: "2 hours",
     location: "Goa",
     image: "/images/fishing.png",
   },
   {
     title: "Cultural Tour of Varanasi",
-    price: 2000,
+    price: 3000,
     duration: "4 hours",
     location: "Uttar Pradesh",
     image: "/images/culture-varanasi.jpg",

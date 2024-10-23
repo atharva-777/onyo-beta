@@ -38,8 +38,57 @@
 }
 
 .footer-image {
-  background-image: url('/images/footer-frame-without-text.png');
+  background-image: url("/images/footer-frame-without-text.png");
   background-size: cover;
   background-position: left;
+}
+
+.pattern-1,
+.pattern-2,
+.pattern-3,
+.pattern-4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern-1::after,
+.pattern-2::after,
+.pattern-3::after,
+.pattern-4::after {
+  content: "";
+  position: absolute;
   
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  
+  top: 35%;
+  z-index: -10;
+}
+.pattern-1::after {
+  background-image: url("/images/pattern (1).png");
+  left: -55%;
+}
+
+.pattern-2::after {
+  background-image: url("/images/pattern (2).png");
+  right: -55%;
+}
+.pattern-3::after {
+  background-image: url("/images/pattern (3).png");
+  left: -55%;
+}
+.pattern-4::after {
+  background-image: url("/images/pattern (4).png");
+  right: -55%;
+}
+@media screen and (max-width: 768px) {
+  .pattern-1::after,
+  .pattern-2::after,
+  .pattern-3::after,
+  .pattern-4::after {
+    display: none;
+  }
 }
