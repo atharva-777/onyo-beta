@@ -3,7 +3,7 @@ import { DotIcon } from "./Icons";
 
 export type CardProps = {
   title: string;
-  price: number;
+  price: number | string;
   duration: string;
   location: string;
   image: string;
