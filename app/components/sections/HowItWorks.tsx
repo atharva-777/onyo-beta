@@ -13,7 +13,7 @@ function HowItWorks() {
         How it works
       </h2>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col md:w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <SearchIcon />
@@ -28,7 +28,7 @@ function HowItWorks() {
 
         <div className="pattern-1 w-72">
           <Image
-            className="mt-5 h-[500px] w-full object-cover lg:mt-0"
+            className="mt-5 h-[540px] lg:h-[500px] w-full object-cover lg:mt-0"
             src={AppScreenShot}
             width={250}
             height={500}
@@ -37,7 +37,7 @@ function HowItWorks() {
         </div>
       </div>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:mb-0 lg:gap-56">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col md:w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <PenIcon />
@@ -60,7 +60,7 @@ function HowItWorks() {
         </div>
       </div>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col md:w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <BookIcon />
@@ -83,7 +83,7 @@ function HowItWorks() {
         </div>
       </div>
       <div className="mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:gap-56">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col md:w-1/2">
           <h3 className="flex font-semibold">
             <div className="size-6">
               <ChatIcon />
@@ -97,7 +97,7 @@ function HowItWorks() {
         </div>
         <div className="pattern-4 w-72">
           <Image
-            className="mt-5 h-[520px] object-cover lg:mt-0"
+            className="mt-5 h-[500px] object-cover lg:mt-0"
             src={chatAppScreen}
             width={250}
             height={500}
