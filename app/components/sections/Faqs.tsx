@@ -18,7 +18,7 @@ const faqs: Faq[] = [
   },
   {
     Answer:
-    "Yoliday allows you to connect with other explorers and adventure lovers by enabling you to join their experiences and vice versa. When you participate in a Yoliday-created experience, you'll have the opportunity to meet new people you may not have encountered before.",
+      "Yoliday allows you to connect with other explorers and adventure lovers by enabling you to join their experiences and vice versa. When you participate in a Yoliday-created experience, you'll have the opportunity to meet new people you may not have encountered before.",
     Question: "How do I connect with other adventurers and explorers?",
   },
   {
