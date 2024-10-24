@@ -10,7 +10,7 @@ export type CardProps = {
 };
 function Card({ title, price, duration, location, image }: CardProps) {
   return (
-    <div className="flex h-72 min-w-52 flex-col rounded-2xl bg-[#f7f7ff] shadow-lg">
+    <div className="flex h-72 w-full flex-col rounded-2xl bg-[#f7f7ff] shadow md:min-w-52 md:shadow-lg">
       <div className="h-48">
         <img
           className="h-48 w-full rounded-t-2xl object-cover"

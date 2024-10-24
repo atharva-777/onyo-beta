@@ -28,7 +28,7 @@ function HowItWorks() {
 
         <div className="pattern-1 w-72">
           <Image
-            className="mt-5 h-[540px] lg:h-[500px] w-full object-cover lg:mt-0"
+            className="mt-5 h-[540px] w-full object-cover lg:mt-0 lg:h-[500px]"
             src={AppScreenShot}
             width={250}
             height={500}
@@ -105,10 +105,10 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <Link href={"/beta-signup"}>
-        <button className="mt-20 rounded-full bg-gradient-linear px-8 py-4 font-medium text-white">
+      <Link href={"/beta-signup"} className="mt-20">
+        <div className="rounded-full bg-gradient-linear px-8 py-4 font-medium text-white">
           Join Beta Testing
-        </button>
+        </div>
       </Link>
     </section>
   );

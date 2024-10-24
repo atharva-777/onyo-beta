@@ -115,9 +115,9 @@ const trips2: CardProps[] = [
 ];
 function Experiences() {
   return (
-    <section className="mx-10 mt-20 flex flex-col gap-5 px-4 md:gap-10 lg:mx-16">
+    <section className="mx-10 mt-20 flex flex-col gap-5 md:mx-10 md:gap-10 lg:mx-16">
       <Carousel className="" opts={{ align: "start" }}>
-        <CarouselContent className="-ml-1 py-6">
+        <CarouselContent className="-mx-1 py-6">
           {trips.map((trip, i) => (
             <CarouselItem
               key={i}
@@ -132,7 +132,7 @@ function Experiences() {
       </Carousel>
 
       <Carousel className="" opts={{ align: "start" }}>
-        <CarouselContent className="-ml-1 py-6">
+        <CarouselContent className="-mx-1 py-6">
           {trips2.map((trip, i) => (
             <CarouselItem
               key={i}
