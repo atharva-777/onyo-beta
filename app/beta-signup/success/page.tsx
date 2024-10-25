@@ -39,7 +39,12 @@ function Page() {
       <p className="mb-4 text-sm">
         We have sent you an email to download the app
       </p>
-      <Link href={"/"} className="rounded-sm bg-gradient-linear mt-20 lg:min-w-96 md:min-w-72 min-w-64 py-2 font-semibold text-white">Go Back Home</Link>
+      <Link
+        href={"/"}
+        className="mt-20 min-w-64 rounded-sm bg-gradient-linear py-2 font-semibold text-white md:min-w-72 lg:min-w-96"
+      >
+        Go Back Home
+      </Link>
     </div>
   );
 }

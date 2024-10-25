@@ -82,7 +82,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mt-10 md:mb-0 mb-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:mb-0 md:flex-row-reverse md:gap-40 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
