@@ -26,7 +26,7 @@ const activities = [
     icon: "/icons/heritage.png",
   },
   {
-    title: "Mountains Majesty",
+    title: "Mountain Majesty",
     icon: "/icons/mountains.png",
   },
   {

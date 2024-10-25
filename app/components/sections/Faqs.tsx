@@ -13,7 +13,7 @@ type Faq = {
 const faqs: Faq[] = [
   {
     Answer:
-      "Yoliday is a platform designed for explorers and adventure enthusiasts to join unique experiences curated by experts and to create their own experiences, allowing others to join in on the adventure. Users can design personalized itineraries, share their unique insights, and invite fellow explorers to participate. This feature fosters a collaborative community where members can discover new experiences, connect with others, and make lasting memories together. Whether you’re looking for hidden gems, authentic local dishes, or winding streets off the beaten path, Yoliday helps you dive deeper into your adventures and explorations. Connecting with like-minded people can create lasting memories and build friendships while exploring together.",
+      "Yoliday is a platform designed for explorers and adventure enthusiasts to join unique experiences curated by experts and to create their own experiences, allowing others to join in on the adventure. Users can design personalised itineraries, share their unique insights, and invite fellow explorers to participate. This feature fosters a collaborative community where members can discover new experiences, connect with others, and make lasting memories together. Whether you’re looking for hidden gems, authentic local dishes, or winding streets off the beaten path, Yoliday helps you dive deeper into your adventures and explorations. Connecting with like-minded people can create lasting memories and build friendships while exploring together.",
     Question: "What is Yoliday and how does it work?",
   },
   {
@@ -23,7 +23,7 @@ const faqs: Faq[] = [
   },
   {
     Answer:
-      "Adventures Experiences, Trekking Experiences, Heritage Tours, Food Tours, Spiritual Experiences, Cultural Experiences, Leisure Tours, City Walks, and much more…",
+      "Photography expeditions, city and village walks, culinary quests, spiritual journeys, camping, star gazing tours, workshops and much more.",
     Question: "What type of experiences can you find on Yoliday?",
   },
   {
@@ -33,12 +33,12 @@ const faqs: Faq[] = [
   },
   {
     Answer:
-      'Yes, you can create your own experience called "User Created Experience" on  Yoliday. To create your own experience on Yoliday, first sign up on our platform. After that, you can click the "plus" icon in the center to start creating your "user-created experience." You\'ll need to provide relevant photos, a name, duration, description, minimum and maximum participant details, pricing, inclusions, exclusions, and a cancellation policy. Additionally, Yoliday offers an AI feature to assist you in crafting your experience with ease.',
+      'Yes, you can create your own experience called "User Created Experience" on  Yoliday. To create your own experience on Yoliday, first sign up on our platform. After that, you can click the "plus" icon in the center to start creating your "user-created experience." You\'ll need to provide relevant images related to your experience, name of the experience, duration and description of the experience minimum and maximum participant details, pricing, inclusions and exclusions, and a cancellation policy. Additionally, Yoliday offers an AI feature to assist you in crafting your experience with ease.',
     Question: "Can I create my own experience on Yoliday?",
   },
   {
     Answer:
-      "No, there's no fee to join Yoliday. You can browse through our experiences and create your own experiences without any charges. ",
+      "No, there's no fee to join Yoliday. You can browse through our experiences and create your own experiences without any charges.",
     Question: "Is there a fee for joining Yoliday?",
   },
 ];
