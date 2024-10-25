@@ -9,6 +9,7 @@ function InfoButton() {
       <button
         className="mx-1 size-6 rounded-full border-2 border-gray-400 font-mono text-xs text-gray-400"
         onClick={() => setShowInfo(!showInfo)}
+        onBlur={() => setShowInfo(false)}
       >
         i
       </button>
