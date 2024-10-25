@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { signupForBeta } from "../actions/actions";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -29,7 +30,24 @@ function Page() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4 lg:p-10">
       <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
-        <h1 className="mb-5 text-center font-poppins text-xl font-medium text-black text-opacity-80 md:text-3xl lg:mb-10">
+        <Link href="/">
+          <div className="mb-5">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.7505 7.36646H4.58049L10.1705 1.77646L8.75049 0.366455L0.750488 8.36646L8.75049 16.3665L10.1605 14.9565L4.58049 9.36646H16.7505V7.36646Z"
+                fill="#707070"
+              />
+            </svg>
+          </div>
+        </Link>
+
+        <h1 className="mb-5 text-left font-poppins text-xl font-medium text-black text-opacity-80 md:text-3xl lg:mb-10">
           Please Enter Your Email ID
         </h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">

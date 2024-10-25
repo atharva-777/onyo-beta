@@ -40,7 +40,7 @@ const IntroVideoBottom = () => {
         <h1 className="mb-1 text-center text-3xl font-medium text-gray-800 text-opacity-80">
           Yoliday Adventures Unveiled
         </h1>
-        <p className="font-normal text-opacity-80">
+        <p className="text-center font-normal text-opacity-80">
           Sail Through A Voyage of Shared Experiences
         </p>
       </div>

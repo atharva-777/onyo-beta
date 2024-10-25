@@ -12,6 +12,7 @@ function Hero() {
           loop
           muted
           playsInline
+          disablePictureInPicture
         >
           <source src="/videos/hero-section-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -34,6 +35,41 @@ function Hero() {
             </div>
           </Link>
           <InfoButton />
+        </div>
+        <div className="absolute bottom-5 right-8 hidden md:flex">
+          <div className="-mr-2 text-right font-extralight">
+            Explore <br /> Now
+          </div>
+          <div>
+            <svg
+              width="46"
+              height="67"
+              viewBox="0 0 46 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.03638 48.3663C8.36395 51.6808 23.0191 59.9167 23.0191 66.345"
+                stroke="white"
+                strokeOpacity="0.7"
+                strokeLinecap="round"
+              />
+              <path
+                d="M45.0017 48.3663C37.6741 51.6808 23.019 59.9167 23.019 66.345"
+                stroke="white"
+                strokeOpacity="0.7"
+                strokeLinecap="round"
+              />
+              <line
+                x1="22.6038"
+                y1="0.735352"
+                x2="22.6038"
+                y2="66.3462"
+                stroke="white"
+                strokeOpacity="0.7"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
