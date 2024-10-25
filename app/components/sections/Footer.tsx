@@ -28,7 +28,7 @@ function Footer() {
             src={yolidayLogoWhite.src}
             alt=""
           ></img>
-          <span className="text-right text-sm font-bold">
+          <span className="text-right text-xs font-bold">
             Don&apos;t just dream it, Yoliday-it!
           </span>
         </div>
