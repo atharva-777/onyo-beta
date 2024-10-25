@@ -1,20 +1,5 @@
 import React from "react";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  YoutubeIcon,
-} from "../Icons";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  LucideFacebook,
-  Mail,
-  Youtube,
-} from "lucide-react";
 import yolidayLogoWhite from "../../assets/icons/yoliday-white-logo.png";
-import Image from "next/image";
 
 const currYear = new Date().getFullYear();
 

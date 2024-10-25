@@ -12,9 +12,6 @@ import Image from "next/image";
   /** Import images */
 }
 import AppScreenShot from "./assets/images/yoliday app home screen.png";
-import experienceImage1 from "./assets/images/exp-2.png";
-import experienceImage2 from "./assets/images/exp-1.png";
-import experienceImage3 from "./assets/images/exp-full.png";
 import Link from "next/link";
 import IntroVideoBottom from "./components/sections/IntroVideoBottom";
 
@@ -54,7 +51,7 @@ export default function Home() {
               create your own.
             </div>
             <Link href="/beta-signup" className="mt-5">
-              <div className="rounded-full bg-white px-4 py-2 font-semibold text-black lg:px-12 lg:py-5">
+              <div className="rounded-full bg-white px-5 py-3 font-semibold text-black lg:px-12 lg:py-5">
                 Join Beta Testing
               </div>
             </Link>

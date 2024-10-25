@@ -8,13 +8,13 @@ import Image from "next/image";
 
 function HowItWorks() {
   return (
-    <section className="mx-5 mt-8 flex flex-col items-center md:mt-10 lg:mt-20">
+    <section className="mx-5 mt-20 flex flex-col items-center md:mt-10 lg:mt-20">
       <h2 className="text-3xl font-medium text-gray-800 text-opacity-80">
         How it works
       </h2>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
-          <h3 className="flex font-semibold">
+          <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
               <SearchIcon />
             </div>
@@ -38,7 +38,7 @@ function HowItWorks() {
       </div>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
-          <h3 className="flex font-semibold">
+          <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
               <PenIcon />
             </div>
@@ -61,7 +61,7 @@ function HowItWorks() {
       </div>
       <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
-          <h3 className="flex font-semibold">
+          <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
               <BookIcon />
             </div>
@@ -84,7 +84,7 @@ function HowItWorks() {
       </div>
       <div className="mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
-          <h3 className="flex font-semibold">
+          <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
               <ChatIcon />
             </div>
@@ -106,7 +106,7 @@ function HowItWorks() {
         </div>
       </div>
       <Link href={"/beta-signup"} className="mt-20">
-        <div className="rounded-full bg-gradient-linear px-8 py-4 font-medium text-white">
+        <div className="rounded-full bg-gradient-linear px-5 py-3 font-semibold text-white lg:px-12 lg:py-5">
           Join Beta Testing
         </div>
       </Link>
