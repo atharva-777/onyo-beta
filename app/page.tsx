@@ -23,7 +23,7 @@ export default function Home() {
       <section className="mx-5 mt-24 flex flex-col-reverse items-center justify-center gap-10 md:mx-10 md:mt-40 md:flex-row md:gap-20 lg:mx-20 lg:gap-40">
         <div className="flex w-full flex-col items-center gap-3 md:w-1/2">
           <Activities />
-          <div className="text-sm text-gray-500">And much more</div>
+          <div className="text-sm pt-3 text-gray-500">And much more</div>
           {/* <div>
             <AppStoreButton />
           </div> */}

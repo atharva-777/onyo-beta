@@ -1,10 +1,20 @@
-import { Metadata } from "next";
+"use client"
+
 import YolidayLogoBlue from "../../assets/icons/yoliday logo.png";
-export const metadata: Metadata = {
-  title: "Success",
-  description: "Your email is verified",
-};
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 function page() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push("/");
+    }, 10000); 
+
+    return () => clearTimeout(timer);
+  }, [router]);
+
   return (
     <div className="mx-auto mt-10 flex max-w-xl flex-col items-center justify-center px-5 text-center lg:mt-20">
       <div className="mb-5 md:mb-8">
