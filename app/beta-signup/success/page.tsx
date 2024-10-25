@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
 import YolidayLogoBlue from "../../assets/icons/yoliday logo.png";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-function page() {
+function Page() {
   const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/");
-    }, 10000); 
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, [router]);
@@ -42,4 +42,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
