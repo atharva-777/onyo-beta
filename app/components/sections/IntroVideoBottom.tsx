@@ -35,7 +35,15 @@ const IntroVideoBottom = () => {
   }, []);
 
   return (
-    <section className="mt-28" id="intro-video">
+    <section className="mt-16 lg:mt-24" id="intro-video">
+      <div className="mb-8 flex flex-col items-center px-5">
+        <h1 className="mb-1 text-center text-3xl font-medium text-gray-800 text-opacity-80">
+          Yoliday Adventures Unveiled
+        </h1>
+        <p className="text-sm font-normal text-opacity-80">
+          Sail Through A Voyage of Shared Experiences
+        </p>
+      </div>
       <div className="mx-5 h-96 rounded-2xl md:mx-10 lg:mx-56 lg:h-[500px]">
         {/* Video Section */}
         <iframe
