@@ -32,8 +32,12 @@ const faqs: Faq[] = [
     Question: "How do I book an experience on Yoliday?",
   },
   {
-    Answer:
-      'Yes, you can create your own experience called "User Created Experience" on  Yoliday. To create your own experience on Yoliday, first sign up on our platform. After that, you can click the "plus" icon in the center to start creating your "user-created experience." You\'ll need to provide relevant images related to your experience, name of the experience, duration and description of the experience minimum and maximum participant details, pricing, inclusions and exclusions, and a cancellation policy. Additionally, Yoliday offers an AI feature to assist you in crafting your experience with ease.',
+    Answer: `Yes, you can create your own experience called "User Created Experience" on  Yoliday. 
+
+To create your own experience on Yoliday, first sign up on our platform. After that, you can click the "plus" icon in the center to start creating your "user-created experience." You'll need to provide relevant images related to your experience, name of the experience, duration and description of the experience minimum and maximum participant details, pricing, inclusions and exclusions, and a cancellation policy. 
+
+Additionally, Yoliday offers an AI feature to assist you in crafting your experience with ease.
+`,
     Question: "Can I create my own experience on Yoliday?",
   },
   {
@@ -60,7 +64,7 @@ function Faqs() {
               <AccordionTrigger className="flex w-full items-center justify-between p-4 text-left">
                 {faq.Question}
               </AccordionTrigger>
-              <AccordionContent className="border-t border-gray-300 p-4">
+              <AccordionContent className="whitespace-pre-line border-t border-gray-300 p-4">
                 {faq.Answer}
               </AccordionContent>
             </AccordionItem>
