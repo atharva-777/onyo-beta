@@ -145,9 +145,9 @@ function HowItWorks() {
             Meet Yobot, Your Experience Assistant
           </h3>
           <p className="pl-6 lg:w-96">
-            Yobot is your AI travel guide, designed to simplify trip planning.
-            Whether you&apos;re looking for destination recommendations or
-            packing tips, Yobot offers quick, personalized suggestions.
+            Yobot is your AI guide, designed to simplify experience planning.
+            Whether you're looking for destination recommendations or packing
+            tips, Yobot offers quick, personalized suggestions.
           </p>
         </div>
 
