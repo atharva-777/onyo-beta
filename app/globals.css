@@ -87,7 +87,7 @@
   right: -55%;
 }
 .pattern-5::after {
-  left: -50%;
+  left: -48%;
 }
 @media screen and (max-width: 768px) {
   .pattern-1::after,
