@@ -40,7 +40,7 @@ const trips: CardProps[] = [
     image: "/images/paragliding.jpg",
   },
   {
-    title: "A Day in Vineyard",
+    title: "A Day in the Vineyard",
     price: 3550,
     duration: "1 day",
     location: "Nashik",
