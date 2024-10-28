@@ -142,7 +142,7 @@ function HowItWorks() {
                 />
               </svg>
             </div>
-            Meet Yobot Your Travel Assistant
+            Meet Yobot, Your Experience Assistant
           </h3>
           <p className="pl-6 lg:w-96">
             Yobot is your AI travel guide, designed to simplify trip planning.
