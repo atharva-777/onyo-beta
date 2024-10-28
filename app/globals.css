@@ -46,7 +46,8 @@
 .pattern-1,
 .pattern-2,
 .pattern-3,
-.pattern-4 {
+.pattern-4,
+.pattern-5 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -56,7 +57,8 @@
 .pattern-1::after,
 .pattern-2::after,
 .pattern-3::after,
-.pattern-4::after {
+.pattern-4::after,
+.pattern-5::after {
   content: "";
   position: absolute;
 
@@ -67,7 +69,7 @@
   top: 35%;
   z-index: -10;
 }
-.pattern-1::after {
+.pattern-1::after, .pattern-5::after {
   background-image: url("/images/pattern (1).png");
   left: -55%;
 }
@@ -84,23 +86,44 @@
   background-image: url("/images/pattern (4).png");
   right: -55%;
 }
+.pattern-5::after {
+  left: -50%;
+}
 @media screen and (max-width: 768px) {
   .pattern-1::after,
   .pattern-2::after,
   .pattern-3::after,
-  .pattern-4::after {
+  .pattern-4::after,
+  .pattern-5::after {
     display: none;
   }
   .circle-bg::after {
     width: 320px;
     height: 320px;
+}
+}
+@media screen and (max-width: 1024px) {
+  .pattern-1::after, .pattern-5::after {
+    background-image: url("/images/pattern (1).png");
+    left: -43%;
   }
-  /* .footer-image {
-    background-image: url("/images/footer-frame-mob.png");
-    background-size: cover;
-    background-position: 80% 0%;
-    background-repeat: no-repeat;
-  } */
+  
+  .pattern-2::after {
+    background-image: url("/images/pattern (2).png");
+    right: -40%;
+  }
+  .pattern-3::after {
+    background-image: url("/images/pattern (3).png");
+    left: -40%;
+  }
+  .pattern-4::after {
+    background-image: url("/images/pattern (4).png");
+    right: -40%;
+  }
+  .pattern-5::after {
+    left: -40%;
+  }
+  
 }
 
 video::-webkit-media-controls {

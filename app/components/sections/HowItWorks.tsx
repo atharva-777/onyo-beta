@@ -12,7 +12,7 @@ function HowItWorks() {
       <h2 className="text-3xl font-medium text-gray-800 text-opacity-80">
         How it works
       </h2>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 md:mb-0 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -36,7 +36,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 lg:mb-0 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 md:mb-0 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -59,7 +59,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 md:mb-0 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -82,7 +82,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mb-10 mt-10 flex flex-col items-center md:mb-0 md:flex-row-reverse md:gap-40 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:mb-0 md:gap-40 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -105,7 +105,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
+      <div className="mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 md:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -151,7 +151,7 @@ function HowItWorks() {
           </p>
         </div>
 
-        <div className="pattern-1 w-72">
+        <div className="pattern-5 w-72">
           <Image
             className="mt-5 h-[500px] w-full object-contain lg:mt-0 lg:h-[500px]"
             src={YobotScreen}

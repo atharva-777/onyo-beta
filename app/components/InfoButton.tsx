@@ -1,15 +1,36 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 function InfoButton() {
   const [showInfo, setShowInfo] = React.useState(false);
+  const buttonRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event:  MouseEvent | TouchEvent): void => {
+    if (buttonRef.current && !buttonRef.current.contains(event.target as Node)) {
+      setShowInfo(false);
+    }
+  };
+
+  useEffect(() => {
+    if (showInfo) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [showInfo]);
   return (
-    <div className="relative w-fit">
+    <div className="relative w-fit" ref={buttonRef}>
       <button
         className="mx-1 size-6 rounded-full border-2 border-gray-400 font-mono text-xs text-gray-400"
         onClick={() => setShowInfo(!showInfo)}
-        onBlur={() => setShowInfo(false)}
       >
         i
       </button>
