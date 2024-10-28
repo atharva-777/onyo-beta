@@ -50,7 +50,7 @@ const trips: CardProps[] = [
     title: "Backwater Bliss",
     price: "13,400",
     duration: "1 day",
-    location: "Kerala",
+    location: "Alleppey",
     image: "/images/houseboat.jpg",
   },
   {
