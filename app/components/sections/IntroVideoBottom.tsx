@@ -1,5 +1,4 @@
 const IntroVideoBottom = () => {
-  
   return (
     <section className="mt-16 lg:mt-24" id="intro-video">
       <div className="mb-8 flex flex-col items-center px-5">

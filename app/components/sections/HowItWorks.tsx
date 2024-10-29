@@ -12,7 +12,7 @@ function HowItWorks() {
       <h2 className="text-3xl font-medium text-gray-800 text-opacity-80">
         How it works
       </h2>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 md:mb-0 lg:mb-0 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:mb-0 md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -36,7 +36,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:gap-40 md:mb-0 lg:mb-0 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:mb-0 md:flex-row-reverse md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -59,7 +59,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row md:gap-40 md:mb-0 lg:mb-0 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:mb-0 md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -82,7 +82,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mb-10 mt-10 flex flex-col items-center md:flex-row-reverse md:mb-0 md:gap-40 lg:gap-56">
+      <div className="mb-10 mt-10 flex flex-col items-center md:mb-0 md:flex-row-reverse md:gap-40 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -105,7 +105,7 @@ function HowItWorks() {
           ></Image>
         </div>
       </div>
-      <div className="mt-10 flex flex-col items-center md:flex-row md:gap-40 lg:mb-0 md:mb-0 lg:gap-56">
+      <div className="mt-10 flex flex-col items-center md:mb-0 md:flex-row md:gap-40 lg:mb-0 lg:gap-56">
         <div className="flex flex-col md:w-1/2">
           <h3 className="flex items-center text-lg font-bold text-[#4d4b4a]">
             <div className="size-6">
@@ -146,8 +146,8 @@ function HowItWorks() {
           </h3>
           <p className="pl-6 lg:w-96">
             Yobot is your AI guide, designed to simplify experience planning.
-            Whether you&apos;re looking for destination recommendations or packing
-            tips, Yobot offers quick, personalized suggestions.
+            Whether you&apos;re looking for destination recommendations or
+            packing tips, Yobot offers quick, personalized suggestions.
           </p>
         </div>
 

@@ -63,7 +63,6 @@ function Socials() {
 
       <a
         href="mailto:hello@yoliday.in"
-        target="_blank"
         className="flex size-6 items-center justify-center"
       >
         <svg

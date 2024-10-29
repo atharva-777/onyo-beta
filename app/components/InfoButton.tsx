@@ -6,8 +6,11 @@ function InfoButton() {
   const [showInfo, setShowInfo] = React.useState(false);
   const buttonRef = useRef<HTMLDivElement>(null);
 
-  const handleClickOutside = (event:  MouseEvent | TouchEvent): void => {
-    if (buttonRef.current && !buttonRef.current.contains(event.target as Node)) {
+  const handleClickOutside = (event: MouseEvent | TouchEvent): void => {
+    if (
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target as Node)
+    ) {
       setShowInfo(false);
     }
   };
