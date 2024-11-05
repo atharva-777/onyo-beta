@@ -69,7 +69,8 @@
   top: 35%;
   z-index: -10;
 }
-.pattern-1::after, .pattern-5::after {
+.pattern-1::after,
+.pattern-5::after {
   background-image: url("/images/pattern (1).png");
   left: -55%;
 }
@@ -100,14 +101,15 @@
   .circle-bg::after {
     width: 320px;
     height: 320px;
-}
+  }
 }
 @media screen and (max-width: 1024px) {
-  .pattern-1::after, .pattern-5::after {
+  .pattern-1::after,
+  .pattern-5::after {
     background-image: url("/images/pattern (1).png");
     left: -43%;
   }
-  
+
   .pattern-2::after {
     background-image: url("/images/pattern (2).png");
     right: -40%;
@@ -123,7 +125,6 @@
   .pattern-5::after {
     left: -40%;
   }
-  
 }
 
 video::-webkit-media-controls {
